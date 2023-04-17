@@ -172,3 +172,12 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+  .nav-bar {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: flex;
+  }
+}
