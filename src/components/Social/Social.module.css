@@ -1,0 +1,41 @@
+@import url("../../main.css");
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-section h3 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.social-icon-list {
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.social-icon-list a {
+  text-decoration: none;
+  color: var(--dark-theme-font);
+}
+
+.social-icon-list.light a {
+  text-decoration: none;
+  color: var(--light-theme-font);
+}
+
+.social-icon-list a:hover {
+  color: var(--highlights-color);
+}
+
+@media (min-width: 1700px) {
+  .social-section h3 {
+    font-size: 28px;
+  }
+  .social-icon-list {
+    font-size: 32px;
+  }
+}

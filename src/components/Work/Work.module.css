@@ -1,0 +1,88 @@
+@import url("../../main.css");
+
+.projects-section {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.projects-section h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.projects-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 350px;
+  height: 200px;
+  background-color: var(--highlights-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--dark-theme-bg);
+}
+
+@media screen and (min-width: 1700px) {
+  .projects-section h3 {
+    font-size: 36px;
+  }
+  .project {
+    width: 480px;
+    height: 280px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projects-container {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects-container {
+    width: 400px;
+  }
+  .project {
+    width: 380px;
+    height: 180px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .projects-container {
+    width: 250px;
+  }
+  .project {
+    width: 250px;
+    height: 150px;
+    margin: auto;
+  }
+}

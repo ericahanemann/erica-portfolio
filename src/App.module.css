@@ -1,0 +1,17 @@
+@import url("./main.css");
+
+#app-container {
+  background-color: var(--dark-theme-bg);
+  color: var(--dark-theme-font);
+  overflow-x: hidden;
+}
+
+#app-container.light {
+  background-color: var(--light-theme-bg);
+  color: var(--light-theme-font);
+  font-weight: normal;
+}
+
+#app-container section, header {
+  width: 100vw;
+}

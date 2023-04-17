@@ -1,0 +1,63 @@
+@import url("../../main.css");
+
+.about-section {
+  padding-top: 120px;
+  margin-right: 10px;
+  margin: auto;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-container {
+  width: 600px;
+}
+
+.my-name {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-me {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.my-name span {
+  color: var(--highlights-color);
+}
+
+@media screen and (min-width: 1700px) {
+  .about-container {
+    width: 1000px;
+  }
+
+  .my-name {
+    font-size: 64px;
+  }
+
+  .about-me {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-container {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-container {
+    width: 300px;
+  }
+  .my-name {
+    font-size: 44px;
+  }
+}

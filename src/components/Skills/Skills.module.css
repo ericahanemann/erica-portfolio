@@ -1,0 +1,66 @@
+@import url("../../main.css");
+
+.skills-section {
+  padding-top: 120px;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills-container h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.skills-list li {
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skills-list li div {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 1700px) {
+  .skills-container h3 {
+    font-size: 36px;
+  }
+  .skills-list li {
+    font-size: 120px;
+    gap: 10px;
+  }
+  .skills-list li div {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .skills-container {
+    max-width: 800px;
+  }
+}

@@ -1,0 +1,177 @@
+@import url("../../main.css");
+
+.form-section {
+  padding-top: 140px;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-container h3 {
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form-description {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.form-container form {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.person-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.person-info input {
+  font-family: "Raleway", sans-serif;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  background-color: transparent;
+  border: 2px solid var(--dark-theme-font);
+  border-radius: 8px;
+  outline: none;
+  color: var(--dark-theme-font);
+}
+
+.person-info.light input {
+  border: 2px solid var(--dark-theme-bg);
+  color: var(--dark-theme-bg);
+}
+
+.person-info input:focus {
+  border: 3px solid var(--highlights-color);
+}
+
+.person-info button {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  background-color: var(--highlights-color);
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  color: var(--dark-theme-bg);
+}
+
+.person-info button:hover {
+  cursor: pointer;
+  background-color: var(--highlights-color-hover);
+}
+
+.message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.message textarea {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  background-color: transparent;
+  border: 2px solid var(--dark-theme-font);
+  border-radius: 8px;
+  outline: none;
+  color: var(--dark-theme-font);
+  resize: none;
+}
+
+.message.light textarea {
+  border: 2px solid var(--dark-theme-bg);
+  color: var(--dark-theme-bg);
+}
+
+.message textarea:focus {
+  border: 3px solid var(--highlights-color);
+}
+
+@media screen and (min-width: 1700px) {
+  .form-container h3 {
+    font-size: 36px;
+  }
+  .form-description {
+    font-size: 28px;
+  }
+  .person-info input {
+    font-size: 24px;
+  }
+  .message textarea {
+    font-size: 24px;
+  }
+  .person-info button {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .form-container {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    width: 600px;
+  }
+  .form-section {
+    margin: 0 15px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .form-container {
+    width: 400px;
+  }
+  .form-container form {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form-section {
+    padding: 0 5px;
+    margin: 0 5px;
+  }
+  .form-container {
+    width: 300px;
+  }
+  .form-container form {
+    flex-direction: column;
+  }
+}

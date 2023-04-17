@@ -1,0 +1,38 @@
+@import url("../../main.css");
+
+.language-options {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+}
+
+.lang-button:hover {
+  color: var(--highlights-color);
+  cursor: pointer;
+}
+
+.lang-button.active {
+  color: var(--highlights-color);
+}
+
+@media screen and (min-width: 1700px) {
+  .language-options {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .language-options {
+    background-color: var(--dark-theme-bg);
+    padding: 8px;
+    border: 1px solid var(--highlights-color);
+    border-radius: 4px;
+  }
+  .language-options.light {
+    background-color: var(--light-theme-bg);
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "pt": {
+    "navbar": {
+      "about": "Sobre mim",
+      "projects": "Projetos",
+      "skills": "Habilidades",
+      "contact": "Contato"
+    },
+    "aboutMe": {
+      "greeting": "Olá, meu nome é",
+      "myName": "Érica Vanessa Hanemann",
+      "exclamation": "!",
+      "iam": "Sou ",
+      "job": "desenvolvedora front-end",
+      "miniBio": ". Atualmente cursando Tecnólogo em Análise e Desenvolvimento de Sistemas no Instituto Federal de Santa Catarina (IFSC)."
+    },
+    "social": {
+      "info": "Você também pode conhecer mais sobre mim e sobre meu trabalho aqui:"
+    },
+    "work": {
+      "title": "Confira alguns dos meus projetos pessoais:"
+    },
+    "skills": {
+      "skillsTitle": "Hard skills:"
+    },
+    "contact": {
+      "contactTitle": "Contate-me",
+      "formDescription": "Caso queira conversar sobre um projeto, parceria (ou só dizer um oi), preencha o formulário abaixo ou envie um email para ericavhanemann@gmail.com",
+      "nameInputPlaceholder": "Seu nome completo",
+      "emailInputPlaceholder": "Seu email",
+      "messagePlaceholder": "Sua mensagem"
+    },
+    "footer": {
+      "copyrightText": "Érica Vanessa Hanemann. Todos os direitos reservados."
+    }
+  },
+  "en": {
+    "navbar": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
+    "aboutMe": {
+      "greeting": "Hi, my name is",
+      "myName": "Érica Vanessa Hanemann",
+      "exclamation": "!",
+      "iam": "I am a ",
+      "job": "front-end developer",
+      "miniBio": ". I'm currently studying Systems Analysis and Development at \"Instituto Federal de Santa Catarina\" (IFSC)."
+    },
+    "social": {
+      "info": "You can also know more about me and my work here:"
+    },
+    "work": {
+      "title": "Check out some of my personal projects:"
+    },
+    "skills": {
+      "skillsTitle": "Hard skills:"
+    },
+    "contact": {
+      "contactTitle": "Contact me",
+      "formDescription": "If you want to talk about a project collaboration (or just say hi), fill up the form bellow or send an email to ericavhanemann@gmail.com",
+      "nameInputPlaceholder": "Your full name",
+      "emailInputPlaceholder": "Your email",
+      "messagePlaceholder": "Your message"
+    },
+    "footer": {
+      "copyrightText": "Érica Vanessa Hanemann. All rights reserved."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import url("../../main.css");
+
+.footer-section {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  border-top: 1px solid var(--dark-theme-hover);
+  padding-top: 10px;
+  width: 1000px;
+  text-align: center;
+  gap: 20px;
+  font-size: 16px;
+  color: var(--dark-theme-hover);
+}
+
+@media screen and (min-width: 1700px) {
+  .footer-container {
+    border-top: 3px solid var(--dark-theme-hover);
+    font-size: 20px;
+  }
+}
