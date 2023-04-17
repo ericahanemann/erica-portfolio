@@ -63,4 +63,7 @@
   .skills-container {
     max-width: 800px;
   }
+  .skills-container h3 {
+    margin-top: 30px;
+  }
 }

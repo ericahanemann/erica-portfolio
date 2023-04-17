@@ -152,6 +152,9 @@
     margin: 0 15px;
     padding: 0 15px;
   }
+  .form-container h3 {
+    margin-top:50px;
+  }
 }
 
 @media screen and (max-width: 650px) {
