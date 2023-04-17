@@ -68,6 +68,12 @@
   }
 }
 
+@media screen and (max-width: 750px) and (orientation: landscape) {
+  .projects-section h3 {
+    margin-top: 100px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .projects-container {
     width: 400px;
