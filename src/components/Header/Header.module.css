@@ -106,6 +106,10 @@
   background-color: var(--dark-theme-bg);
 }
 
+.mobile-menu-list.light {
+  background-color: var(--light-theme-bg);
+}
+
 .mobile-menu-list .section-link {
   border: 0;
   width: 200px;
@@ -117,6 +121,10 @@
   font-weight: 500;
   padding: 10px 20px;
   margin-bottom: 20px;
+}
+
+.mobile-menu-list.light .section-link {
+  color: var(--light-theme-font);
 }
 
 .mobile-menu-icon {
