@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Work from "./components/Work/Work";
@@ -13,6 +13,20 @@ function App() {
   const [lang, setLang] = useState("pt");
 
   const content = translations[lang];
+
+  useEffect(() => {
+    if (window.matchMedia("prefers-color-scheme: dark").matches) {
+      setTheme("dark");
+    } else if (window.matchMedia("prefers-color-scheme: light").matches) {
+      setTheme("light");
+    }
+
+    if (navigator.language.toLowerCase().startsWith("pt")) {
+      setLang("pt");
+    } else if (navigator.language.toLowerCase().startsWith("en")) {
+      setLang("en");
+    }
+  }, []);
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
