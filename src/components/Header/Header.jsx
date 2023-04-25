@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { LangAndThemeContext } from "../../App";
 import css from "./Header.module.css";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { Link } from "react-scroll";
 
-function Header({ onThemeSwitch, theme, content }) {
+function Header({ onThemeSwitch }) {
+  const { theme, content } = useContext(LangAndThemeContext);
   const [showMenuList, setShowMenuList] = useState("hide");
   const [showMenuIcon, setShowMenuIcon] = useState("null");
 

@@ -1,6 +1,9 @@
+import React, { useContext } from "react";
+import { LangAndThemeContext } from "../../App";
 import css from "./LanguageSelector.module.css";
 
-function LanguageSelector({ onSelect, lang, theme }) {
+function LanguageSelector({ onSelect, lang }) {
+  const { theme } = useContext(LangAndThemeContext);
   const selectLang = (langSelected) => {
     if (lang !== langSelected) {
       onSelect();

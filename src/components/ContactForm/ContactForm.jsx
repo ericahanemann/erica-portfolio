@@ -1,8 +1,12 @@
+import React, { useContext } from "react";
+import { LangAndThemeContext } from "../../App";
 import css from "./ContactForm.module.css";
 import Social from "../Social/Social";
 import Footer from "../Footer/Footer";
 
-function ContactForm({ content, theme }) {
+function ContactForm() {
+  const { theme, content } = useContext(LangAndThemeContext);
+
   return (
     <div id="contact" className={css["form-section"]}>
       <div className={css["form-container"]}>
@@ -42,8 +46,8 @@ function ContactForm({ content, theme }) {
         </form>
       </div>
 
-      <Social theme={theme} content={content} />
-      <Footer content={content} theme={theme} />
+      <Social />
+      <Footer />
     </div>
   );
 }

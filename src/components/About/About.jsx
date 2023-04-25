@@ -1,7 +1,11 @@
+import React, { useState, useContext } from "react";
+import { LangAndThemeContext } from "../../App";
 import css from "./About.module.css";
 import Social from "../Social/Social";
 
-function About({ content, theme }) {
+function About() {
+  const { content } = useContext(LangAndThemeContext);
+
   return (
     <div id="about" className={css["about-section"]}>
       <div className={css["about-container"]}>
@@ -14,7 +18,7 @@ function About({ content, theme }) {
           <strong>{content.aboutMe.job}</strong>
           {content.aboutMe.miniBio}
         </p>
-        <Social content={content} theme={theme} />
+        <Social />
       </div>
     </div>
   );

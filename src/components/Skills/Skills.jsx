@@ -1,3 +1,5 @@
+import React, { useContext } from "react";
+import { LangAndThemeContext } from "../../App";
 import css from "./Skills.module.css";
 import {
   SiHtml5,
@@ -11,7 +13,9 @@ import {
   SiGit,
 } from "react-icons/si";
 
-function Skills({ content }) {
+function Skills() {
+  const { content } = useContext(LangAndThemeContext);
+
   return (
     <div id="skills" className={css["skills-section"]}>
       <div className={css["skills-container"]}>
