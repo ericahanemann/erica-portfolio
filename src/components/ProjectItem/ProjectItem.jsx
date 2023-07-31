@@ -12,13 +12,12 @@ function ProjectItem({ project }) {
       </div>
     );
   });
-  const projectImgSrc = `src/assets/${project.projectName}-screenshot.png`;
 
   return (
     <div className={css["project"]}>
       <h4>{project.projectName}</h4>
       <div className={css["project-img-container"]}>
-        <img src={projectImgSrc} />
+        <img src={project.imgUrl} />
         <a href={project.liveDemoUrl} target="blank">
           <div className={css["project-overlay"]}>
             <div className={css["link-item"]}>
