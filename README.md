@@ -18,7 +18,7 @@ This project was developed using the following technologies and libraries:
 
 - HTML e CSS (CSS modules)
 - JavaScript e JSON
-- Node and NPM
+- NPM
 - Vite
 - React
 - React Icons
