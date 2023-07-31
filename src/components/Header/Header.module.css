@@ -83,6 +83,7 @@
 
 .nav-bar .section-link:hover {
   background-color: var(--dark-theme-hover);
+  cursor: pointer;
 }
 
 .nav-bar.light .section-link:hover {

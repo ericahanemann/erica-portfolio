@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { LangAndThemeContext } from "../../App";
 import css from "./Social.module.css";
-import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 function Social() {
   const { theme, content } = useContext(LangAndThemeContext);
@@ -18,9 +18,6 @@ function Social() {
           target="blank"
         >
           <BsLinkedin className={css["social-icon"]} />
-        </a>
-        <a href="https://www.instagram.com/erica_hnm" target="blank">
-          <BsInstagram className={css["social-icon"]} />
         </a>
       </div>
     </div>
