@@ -22,7 +22,7 @@
       "projects": [
         {
           "projectName": "Watchthis",
-          "imgUrl": "https://github.com/ericahanemann/erica-portfolio/blob/master/public/images/Watchthis-screenshot.png",
+          "imgUrl": "images/Watchthis-screenshot.png",
           "projectDescription": "Watchthis é uma aplicação que se conecta à API do The Movie Database para fornecer recomendações de filmes em alta, os mais bem avaliados e os próximos lançamentos. Você pode explorar informações detalhadas sobre cada filme e até mesmo criar sua própria watchlist.",
           "technologies": ["react", "javascript", "tailwind css", "axios"],
           "liveDemoUrl": "https://watch-this-app.vercel.app/",
@@ -68,7 +68,7 @@
       "projects": [
         {
           "projectName": "Watchthis",
-          "imgUrl": "https://github.com/ericahanemann/erica-portfolio/blob/master/public/images/Watchthis-screenshot.png",
+          "imgUrl": "images/Watchthis-screenshot.png",
           "projectDescription": "Watchthis is an application that connects to The Movie Database API to provide trending, top-rated, and upcoming movie recommendations. You can explore detailed information about each movie and even create your own watchlist.",
           "technologies": ["react", "javascript", "tailwind css", "axios"],
           "liveDemoUrl": "https://watch-this-app.vercel.app/",
