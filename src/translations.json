@@ -33,7 +33,7 @@
           "projectName": "[EM BREVE] Perfect Harmony Music Store",
           "finished": "false",
           "imgUrl": "images/perfect-harmony-screenshot.png",
-          "projectDescription": "Perfect Harmony Music Store é um ecommerce de instrumentos musicais que oferece uma ampla variedade de produtos, desde guitarras e teclados até baterias e equipamentos de gravação. A aplicação possui uma API própria que permite aos usuários consultar facilmente os produtos por categoria, encontrar informações detalhadas sobre cada instrumento, adicionar produtos no carrinho e até mesmo criar uma lista de desejos personalizada.",
+          "projectDescription": "Perfect Harmony é um ecommerce de instrumentos musicais que oferece uma ampla variedade de produtos, desde guitarras e teclados até baterias e equipamentos de gravação. A aplicação possui uma API própria que permite aos usuários consultar facilmente os produtos por categoria, encontrar informações detalhadas sobre cada instrumento, adicionar produtos no carrinho e até mesmo criar uma lista de desejos personalizada.",
           "technologies": [
             "javascript",
             "node js",
