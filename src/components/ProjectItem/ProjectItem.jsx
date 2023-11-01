@@ -18,26 +18,30 @@ function ProjectItem({ project }) {
       <h4>{project.projectName}</h4>
       <div className={css["project-img-container"]}>
         <img src={project.imgUrl} />
-        <a href={project.liveDemoUrl} target="blank">
-          <div className={css["project-overlay"]}>
-            <div className={css["link-item"]}>
-              Live demo
-              <BsBoxArrowUpRight />
+        {project.finished == "true" && (
+          <a href={project.liveDemoUrl} target="blank">
+            <div className={css["project-overlay"]}>
+              <div className={css["link-item"]}>
+                Live demo
+                <BsBoxArrowUpRight />
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        )}
       </div>
       <div className={css["project-info"]}>
         <p>{project.projectDescription}</p>
         <div>{renderedTechnologies}</div>
 
         <div className={css["project-links"]}>
-          <div className={css["link-item"]}>
-            <a href={project.liveDemoUrl} target="blank">
-              <div>Live demo</div>
-              <BsBoxArrowUpRight />
-            </a>
-          </div>
+          {project.finished == "true" && (
+            <div className={css["link-item"]}>
+              <a href={project.liveDemoUrl} target="blank">
+                <div>Live demo</div>
+                <BsBoxArrowUpRight />
+              </a>
+            </div>
+          )}
 
           <div className={css["link-item"]}>
             <a href={project.codeUrl} target="blank">

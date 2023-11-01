@@ -2,7 +2,6 @@ import React, { useState, useContext } from "react";
 import { LangAndThemeContext } from "../../App";
 import css from "./Work.module.css";
 import ProjectItem from "../ProjectItem/ProjectItem";
-import ProjectItemSkeleton from "../ProjectItemSkeleton/ProjectItemSkeleton";
 
 function Work() {
   const { content } = useContext(LangAndThemeContext);
@@ -17,7 +16,6 @@ function Work() {
         <h3>{content.work.title}</h3>
         <div className={css["projects"]}>
           {renderedProjects}
-          <ProjectItemSkeleton />
         </div>
       </div>
     </div>
