@@ -14,7 +14,7 @@ function Social() {
           <BsGithub className={css["social-icon"]} />
         </a>
         <a
-          href="www.linkedin.com/in/erica-hanemann"
+          href="https://www.linkedin.com/in/erica-hanemann/"
           target="blank"
         >
           <BsLinkedin className={css["social-icon"]} />
