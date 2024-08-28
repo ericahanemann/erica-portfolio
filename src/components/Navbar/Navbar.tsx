@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 
-import logo from "/img/erica-logo.png";
 import styles from "./Navbar.module.css";
+import Logo from "../Logo/Logo";
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <NavLink to="/" className={styles.logo}>
-        <img className={styles.logoImg} src={logo} alt="logo"></img>
+        <Logo></Logo>
       </NavLink>
 
       <ul className={styles.navlinks}>
