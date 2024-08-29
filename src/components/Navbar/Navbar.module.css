@@ -13,21 +13,113 @@
 }
 
 .navlinks {
+  height: 100%;
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   text-transform: uppercase;
 }
 
 .navlinksItem {
+  height: 100%;
+  display: flex;
+  align-items: center;
   font-weight: bold;
   font-size: 1rem;
   transition: 0.15s ease-in-out;
 }
 
-.navlinksItem:hover {
-  color: var(--highlights-color);
-  cursor: pointer;
+.navlinksItem .linkTag {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 0.4rem 0.8rem;
+}
+
+.linkTag::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  background-color: var(--secondary-color);
+  opacity: 0;
+
+  transition: all 0.25s;
+  transform: translateY(-50%);
+}
+
+.linkTag:hover::before {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  animation: fade-in-out 0.25s;
+}
+
+.linkTag::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  right: 0;
+  background-color: var(--secondary-color);
+  opacity: 0;
+
+  transition: all 0.25s;
+  transform: translateY(-50%);
+}
+
+.linkTag:hover::after {
+  right: 50%;
+  transform: translateY(-50%) translateX(50%);
+  animation: fade-in-out 0.25s;
+}
+
+.linkTag span:nth-child(1) {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  border-width: 2px 0 0 2px;
+
+  transition: all 0.25s 0.25s;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.linkTag span:nth-child(2) {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: 50%;
+  right: 50%;
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  border-width: 0 2px 2px 0;
+
+  transition: all 0.25s 0.25s;
+  opacity: 0;
+  transform: translateX(50%) translateY(50%);
+}
+
+.linkTag:hover span:nth-child(1) {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transform: translateX(0) translateY(0);
+}
+
+.linkTag:hover span:nth-child(2) {
+  opacity: 1;
+  bottom: 0;
+  right: 0;
+  transform: translateX(0) translateY(0);
 }
 
 .contactButton {
@@ -44,5 +136,19 @@
 .contactButton:hover {
   cursor: pointer;
   background-color: var(--highlights-color-hover);
-  transition: 0.2s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

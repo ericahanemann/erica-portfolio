@@ -11,10 +11,34 @@ export default function Navbar() {
       </NavLink>
 
       <ul className={styles.navlinks}>
-        <li className={styles.navlinksItem}>home</li>
-        <li className={styles.navlinksItem}>about me</li>
-        <li className={styles.navlinksItem}>projects</li>
-        <li className={styles.navlinksItem}>skills</li>
+        <li className={styles.navlinksItem}>
+          <NavLink className={styles.linkTag} to="/">
+            <span></span>
+            home
+            <span></span>
+          </NavLink>
+        </li>
+        <li className={styles.navlinksItem}>
+          <NavLink className={styles.linkTag} to="/">
+            <span></span>
+            about me
+            <span></span>
+          </NavLink>
+        </li>
+        <li className={styles.navlinksItem}>
+          <NavLink className={styles.linkTag} to="/">
+            <span></span>
+            projects
+            <span></span>
+          </NavLink>
+        </li>
+        <li className={styles.navlinksItem}>
+          <NavLink className={styles.linkTag} to="/">
+            <span></span>
+            skills
+            <span></span>
+          </NavLink>
+        </li>
       </ul>
 
       <NavLink to="/">
