@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./Home.module.css"
+import styles from "./Home.module.css";
 
 import { GrLinkedin, GrGithub } from "react-icons/gr";
 
@@ -18,16 +18,22 @@ export default function Home() {
             <a
               href="https://github.com/ericahanemann"
               target="_blank"
+              rel="noreferrer"
               className={styles.heroSocialIconLink}
             >
+              <span></span>
               <GrGithub className={styles.heroSocialIcon}></GrGithub>
+              <span></span>
             </a>
             <a
               href="https://www.linkedin.com/in/erica-hanemann/"
               target="_blank"
+              rel="noreferrer"
               className={styles.heroSocialIconLink}
             >
+              <span></span>
               <GrLinkedin className={styles.heroSocialIcon}></GrLinkedin>
+              <span></span>
             </a>
           </div>
         </div>

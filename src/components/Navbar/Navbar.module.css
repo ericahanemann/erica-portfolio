@@ -123,6 +123,7 @@
 }
 
 .contactButton {
+  position: relative;
   text-transform: uppercase;
   font-weight: bold;
   padding: 0.8rem 1.4rem;
@@ -131,12 +132,36 @@
   background-color: var(--highlights-color);
   font-size: 1rem;
   box-shadow: 2px 2px 4px #6969695e;
+  overflow: hidden;
+
+  
+  transition: all 0.5s;
 }
 
 .contactButton:hover {
   cursor: pointer;
   background-color: var(--highlights-color-hover);
-  transition: 0.25s ease-in-out;
+}
+
+.contactButton::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(
+    transparent,
+    rgba(235, 235, 235, 0.552),
+    transparent
+  );
+
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.contactButton:hover::before {
+  transform: translateX(100%) rotate(45deg);
 }
 
 @keyframes fade-in-out {
