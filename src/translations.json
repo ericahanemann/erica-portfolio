@@ -1,0 +1,110 @@
+{
+  "pt": {
+    "navbar": {
+      "home": "início",
+      "about": "Sobre mim",
+      "projects": "Projetos",
+      "skills": "Habilidades",
+      "contact": "Contato"
+    },
+    "about": {
+      "title": "sobre mim"
+    },
+    "projects": {
+      "title": "projetos"
+    },
+    "skills": {
+      "title": "hard skills"
+    },
+    "work": {
+      "title": "Confira alguns dos meus projetos pessoais:",
+      "projects": [
+        {
+          "projectName": "Watchthis",
+          "finished": "true",
+          "imgUrl": "images/Watchthis-screenshot.png",
+          "projectDescription": "Watchthis é uma aplicação que se conecta à API do The Movie Database para fornecer recomendações de filmes em alta, os mais bem avaliados e os próximos lançamentos. Você pode explorar informações detalhadas sobre cada filme e até mesmo criar sua própria watchlist.",
+          "technologies": ["react", "javascript", "tailwind css", "axios"],
+          "liveDemoUrl": "https://watch-this-app.vercel.app/",
+          "codeUrl": "https://github.com/ericahanemann/watch-this-app"
+        },
+        {
+          "projectName": "[EM BREVE] Perfect Harmony Music Store",
+          "finished": "false",
+          "imgUrl": "images/perfect-harmony-screenshot.png",
+          "projectDescription": "Perfect Harmony é um ecommerce de instrumentos musicais que oferece uma ampla variedade de produtos, desde guitarras e teclados até baterias e equipamentos de gravação. A aplicação possui uma API própria que permite aos usuários consultar facilmente os produtos por categoria, encontrar informações detalhadas sobre cada instrumento, adicionar produtos no carrinho e até mesmo criar uma lista de desejos personalizada.",
+          "technologies": [
+            "javascript",
+            "node js",
+            "mongo db",
+            "react",
+            "tailwind css",
+            "axios"
+          ],
+          "liveDemoUrl": "#",
+          "codeUrl": "https://github.com/ericahanemann/perfect-harmony-music-store"
+        }
+      ]
+    },
+    "contact": {
+      "title": "contato"
+    },
+    "footer": {
+      "copyrightText": "Érica Vanessa Hanemann. Todos os direitos reservados."
+    }
+  },
+  "en": {
+    "navbar": {
+      "home": "home",
+      "about": "about me",
+      "projects": "projects",
+      "skills": "skills",
+      "contact": "contact"
+    },
+    "about": {
+      "title": "about me"
+    },
+    "projects": {
+      "title": "projects"
+    },
+    "skills": {
+      "title": "hard skills"
+    },
+    "work": {
+      "title": "Confira alguns dos meus projetos pessoais:",
+      "projects": [
+        {
+          "projectName": "Watchthis",
+          "finished": "true",
+          "imgUrl": "images/Watchthis-screenshot.png",
+          "projectDescription": "Watchthis é uma aplicação que se conecta à API do The Movie Database para fornecer recomendações de filmes em alta, os mais bem avaliados e os próximos lançamentos. Você pode explorar informações detalhadas sobre cada filme e até mesmo criar sua própria watchlist.",
+          "technologies": ["react", "javascript", "tailwind css", "axios"],
+          "liveDemoUrl": "https://watch-this-app.vercel.app/",
+          "codeUrl": "https://github.com/ericahanemann/watch-this-app"
+        },
+        {
+          "projectName": "[EM BREVE] Perfect Harmony Music Store",
+          "finished": "false",
+          "imgUrl": "images/perfect-harmony-screenshot.png",
+          "projectDescription": "Perfect Harmony é um ecommerce de instrumentos musicais que oferece uma ampla variedade de produtos, desde guitarras e teclados até baterias e equipamentos de gravação. A aplicação possui uma API própria que permite aos usuários consultar facilmente os produtos por categoria, encontrar informações detalhadas sobre cada instrumento, adicionar produtos no carrinho e até mesmo criar uma lista de desejos personalizada.",
+          "technologies": [
+            "javascript",
+            "node js",
+            "mongo db",
+            "react",
+            "tailwind css",
+            "axios"
+          ],
+          "liveDemoUrl": "#",
+          "codeUrl": "https://github.com/ericahanemann/perfect-harmony-music-store"
+        }
+      ]
+    },
+    "contact": {
+      "title": "contact"
+    },
+    "footer": {
+      "copyrightText": "Érica Vanessa Hanemann. All rights reserved."
+    }
+  }
+}

@@ -2,8 +2,13 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./Navbar.module.css";
 import Logo from "../Logo/Logo";
+import { TranslationContent } from "../../types/translations";
 
-export default function Navbar() {
+interface NavbarProps {
+  content: TranslationContent;
+}
+
+export default function Navbar({ content }: NavbarProps) {
   return (
     <nav className={styles.navbar}>
       <NavLink to="/" className={styles.logo}>
@@ -14,35 +19,37 @@ export default function Navbar() {
         <li className={styles.navlinksItem}>
           <NavLink className={styles.linkTag} to="/">
             <span></span>
-            home
+            {content.navbar.home}
             <span></span>
           </NavLink>
         </li>
         <li className={styles.navlinksItem}>
           <NavLink className={styles.linkTag} to="/">
             <span></span>
-            about me
+            {content.navbar.about}
             <span></span>
           </NavLink>
         </li>
         <li className={styles.navlinksItem}>
           <NavLink className={styles.linkTag} to="/">
             <span></span>
-            projects
+            {content.navbar.projects}
             <span></span>
           </NavLink>
         </li>
         <li className={styles.navlinksItem}>
           <NavLink className={styles.linkTag} to="/">
             <span></span>
-            skills
+            {content.navbar.skills}
             <span></span>
           </NavLink>
         </li>
       </ul>
 
       <NavLink to="/">
-        <button className={styles.contactButton}>contact me</button>
+        <button className={styles.contactButton}>
+          {content.navbar.contact}
+        </button>
       </NavLink>
     </nav>
   );
