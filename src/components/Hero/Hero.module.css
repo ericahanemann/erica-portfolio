@@ -1,0 +1,192 @@
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+
+.heroInfo {
+  width: 30%;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+.heroInfoTitle {
+  font-family: "Staatliches", sans-serif;
+  font-size: 3rem;
+  color: var(--highlights-color);
+  line-height: 2.9rem;
+  overflow-y: hidden;
+}
+
+.heroInfoText {
+  width: 70%;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.heroInfoSocials {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.heroSocialIconLink {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 0.25rem;
+
+  transition: color 0.2s;
+}
+
+.heroSocialIconLink:hover {
+  color: var(--highlights-color);
+}
+
+.heroSocialIconLink::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  left: -100%;
+  background-color: var(--highlights-color);
+  opacity: 0;
+
+  transition: all 0.25s;
+  transform: translateY(-50%);
+}
+
+.heroSocialIconLink:hover::before {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  animation: fade-in-out 0.25s;
+}
+
+.heroSocialIconLink::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  right: -100%;
+  background-color: var(--highlights-color);
+  opacity: 0;
+
+  transition: all 0.25s;
+  transform: translateY(-50%);
+}
+
+.heroSocialIconLink:hover::after {
+  right: 50%;
+  transform: translateY(-50%) translateX(50%);
+  animation: fade-in-out 0.25s;
+}
+
+.heroSocialIconLink span:nth-child(1) {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid var(--highlights-color);
+  background-color: transparent;
+  border-width: 2px 0 0 2px;
+
+  transition: all 0.25s 0.25s;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.heroSocialIconLink span:nth-child(3) {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: 50%;
+  right: 50%;
+  border: 2px solid var(--highlights-color);
+  background-color: transparent;
+  border-width: 0 2px 2px 0;
+
+  transition: all 0.25s 0.25s;
+  opacity: 0;
+  transform: translateX(50%) translateY(50%);
+}
+
+.heroSocialIconLink:hover span:nth-child(1) {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transform: translateX(0) translateY(0);
+}
+
+.heroSocialIconLink:hover span:nth-child(3) {
+  opacity: 1;
+  bottom: 0;
+  right: 0;
+  transform: translateX(0) translateY(0);
+}
+
+.heroSocialIcon {
+  font-size: 52px;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.name {
+  position: relative;
+  width: 70%;
+  padding-right: 2.5rem;
+  overflow-y: hidden;
+  font-family: "Staatliches", sans-serif;
+  font-size: 21rem;
+  font-weight: 500;
+  line-height: 16rem;
+  letter-spacing: -1.2rem;
+  text-align: right;
+  color: var(--secondary-color);
+  user-select: none; /* block text selection */
+}
+
+.name::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(45deg, transparent, #f0f0f050, transparent);
+  transform: translateX(-100%);
+  animation: shine 8s infinite;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}

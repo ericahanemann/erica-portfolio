@@ -1,10 +1,15 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
   width: 100vw;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  background-color: var(--primary-color);
 }
 
 .logo {
@@ -34,8 +39,11 @@
 .navlinksItem .linkTag {
   position: relative;
   text-decoration: none;
-  color: black;
   padding: 0.4rem 0.8rem;
+}
+
+.linkTag:hover {
+  cursor: pointer;
 }
 
 .linkTag::before {
@@ -88,7 +96,7 @@
   background-color: transparent;
   border-width: 2px 0 0 2px;
 
-  transition: all 0.25s 0.25s;
+  transition: all 0.15s 0.25s;
   opacity: 0;
   transform: translateX(-50%) translateY(-50%);
 }
@@ -103,7 +111,7 @@
   background-color: transparent;
   border-width: 0 2px 2px 0;
 
-  transition: all 0.25s 0.25s;
+  transition: all 0.15s 0.25s;
   opacity: 0;
   transform: translateX(50%) translateY(50%);
 }
@@ -122,6 +130,45 @@
   transform: translateX(0) translateY(0);
 }
 
+.navlinksItem .activeLinkTag {
+  position: relative;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+}
+
+.activeLinkTag::before,
+.activeLinkTag::after {
+  display: none;
+}
+
+.activeLinkTag span:nth-child(1) {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  border-width: 2px 0 0 2px;
+
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+.activeLinkTag span:nth-child(2) {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: 0;
+  right: 0;
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  border-width: 0 2px 2px 0;
+
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
 .contactButton {
   position: relative;
   text-transform: uppercase;
@@ -134,7 +181,6 @@
   box-shadow: 2px 2px 4px #6969695e;
   overflow: hidden;
 
-  
   transition: all 0.5s;
 }
 

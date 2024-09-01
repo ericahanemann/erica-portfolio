@@ -23,8 +23,9 @@ export const AppRoutes = () => {
     <BrowserRouter>
       <Navbar content={content} />
       <Routes>
-        <Route path="/" element={<Home content={content} />} />
-        <Route path="/project" element={<Project content={content} />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/contact" element={<Project />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
