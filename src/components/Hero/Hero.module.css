@@ -6,8 +6,15 @@
   background-color: var(--primary-color);
 }
 
+.heroContent {
+  display: flex;
+  align-items: end;
+  margin-top: 4rem;
+}
+
 .heroInfo {
-  width: 30%;
+  height: 100%;
+  width: 35%;
   padding-left: 2rem;
   display: flex;
   flex-direction: column;
@@ -17,16 +24,17 @@
 
 .heroInfoTitle {
   font-family: "Staatliches", sans-serif;
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: var(--highlights-color);
   line-height: 2.9rem;
   overflow-y: hidden;
 }
 
 .heroInfoText {
-  width: 70%;
+  width: 60%;
   text-transform: uppercase;
   letter-spacing: -1px;
+  text-align: justify;
 }
 
 .heroInfoSocials {
@@ -143,16 +151,17 @@
 
 .name {
   position: relative;
-  width: 70%;
+  width: 65%;
   padding-right: 2.5rem;
   overflow-y: hidden;
   font-family: "Staatliches", sans-serif;
-  font-size: 21rem;
+  font-size: 22rem;
   font-weight: 500;
   line-height: 16rem;
   letter-spacing: -1.2rem;
   text-align: right;
   color: var(--secondary-color);
+  padding-top: 1rem;
   user-select: none; /* block text selection */
 }
 

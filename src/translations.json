@@ -7,6 +7,10 @@
       "skills": "Habilidades",
       "contact": "Contato"
     },
+    "hero": {
+      "title": "desenvolvedora frontend",
+      "content": "focada em desenvolvimento web, crio aplicações personalizadas que combinam design e funcionalidade de maneira fluida. mais sobre mim e meu trabalho:"
+    },
     "about": {
       "title": "sobre mim"
     },
@@ -60,6 +64,10 @@
       "projects": "projects",
       "skills": "skills",
       "contact": "contact"
+    },
+    "hero": {
+      "title": "frontend developer",
+      "content": "focused on web development, i create custom applications that seamlessly blend design and functionality. more about me and my work:"
     },
     "about": {
       "title": "about me"

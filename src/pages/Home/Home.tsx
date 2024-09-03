@@ -4,10 +4,16 @@ import About from "../../components/About/About";
 import Projects from "../../components/Projects/Projects";
 import Skills from "../../components/Skills/Skills";
 
-export default function Home() {
+import { TranslationContent } from "../../types/translations";
+
+interface HomeProps {
+  content: TranslationContent;
+}
+
+export default function Home({ content }: HomeProps) {
   return (
     <main className={styles.main}>
-      <Hero></Hero>
+      <Hero content={content}></Hero>
       <About></About>
       <Projects></Projects>
       <Skills></Skills>

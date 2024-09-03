@@ -16,6 +16,10 @@ export type TranslationContent = {
     skills: string;
     contact: string;
   };
+  hero: {
+    title: string
+    content: string
+  };
   about: {
     title: string;
   };
