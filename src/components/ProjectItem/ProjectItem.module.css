@@ -1,0 +1,86 @@
+.cardContainer {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  box-shadow: 0 20px 50px -25px rgba(236, 236, 236, 0.24);
+  border-radius: 0.8rem;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../public/img/project-print.png");
+  background-size: cover;
+  background-position: right;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(135deg, #99999941, #00000063 70%);
+  border-radius: 0.8rem;
+  opacity: 1;
+
+  transition: all 0.5s;
+}
+
+.card:hover::before {
+  opacity: 0;
+}
+
+.card .bgVideo {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+}
+
+.card:hover .bgVideo {
+  opacity: 1;
+}
+
+.card:hover .glass {
+  display: none;
+}
+
+.card .glass {
+  position: absolute;
+  inset: 0;
+  background-color: #30303018;
+  border-radius: 0.8rem;
+  backdrop-filter: blur(0.5px);
+  animation: all 1.5s ease-in-out;
+}
+
+.cardTitle {
+  width: 50%;
+  font-weight: 500;
+  font-size: 4rem;
+  letter-spacing: -0.2rem;
+  line-height: 4rem;
+  overflow-y: hidden;
+  text-align: center;
+  transform: translateZ(20px);
+  text-shadow: 4px 4px 8px #252525b6;
+  color: var(--primary-color);
+  font-family: "Staatliches", sans-serif;
+}

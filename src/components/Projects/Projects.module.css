@@ -1,8 +1,28 @@
 .projectsSection {
   min-height: calc(100vh - 100px);
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .projectsTitle {
-  color: var(--secondary-color);
+  width: 100%;
+  text-align: left;
+  font-size: 6rem;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.2rem;
+  color: var(--primary-color);
+  padding: 2rem 0 0 2rem;
+}
+
+.projectsContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectItem {
+  width: 50%;
+  height: 80vh;
+  padding: 2rem;
+  text-decoration: none;
 }

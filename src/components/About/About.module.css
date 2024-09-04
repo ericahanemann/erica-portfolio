@@ -1,8 +1,8 @@
 .aboutSection {
   min-height: calc(100vh - 100px);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .aboutTitle {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }

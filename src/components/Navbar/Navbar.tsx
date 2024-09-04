@@ -52,21 +52,6 @@ export default function Navbar({ content }: NavbarProps) {
           </li>
           <li className={styles.navlinksItem}>
             <Link
-              to="about"
-              className={styles.linkTag}
-              activeClass={styles.activeLinkTag}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-100}
-            >
-              <span></span>
-              {content.navbar.about}
-              <span></span>
-            </Link>
-          </li>
-          <li className={styles.navlinksItem}>
-            <Link
               to="projects"
               className={styles.linkTag}
               activeClass={styles.activeLinkTag}
@@ -77,6 +62,21 @@ export default function Navbar({ content }: NavbarProps) {
             >
               <span></span>
               {content.navbar.projects}
+              <span></span>
+            </Link>
+          </li>
+          <li className={styles.navlinksItem}>
+            <Link
+              to="about"
+              className={styles.linkTag}
+              activeClass={styles.activeLinkTag}
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-100}
+            >
+              <span></span>
+              {content.navbar.about}
               <span></span>
             </Link>
           </li>
