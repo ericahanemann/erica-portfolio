@@ -41,7 +41,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title }) => {
         glarePosition="all"
         glareBorderRadius="10px"
       >
-        <div className={styles.cardTitle}>{title}</div>
         <video
           ref={videoRef}
           className={styles.bgVideo}
@@ -53,6 +52,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title }) => {
           <source src={bgVideo} type="video/mp4" />
         </video>
         <div className="glass"></div>
+        <div className={styles.cardTitle}>{title}</div>
       </Tilt>
     </div>
   );

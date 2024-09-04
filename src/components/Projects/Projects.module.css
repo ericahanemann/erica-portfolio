@@ -18,11 +18,11 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
 .projectItem {
   width: 50%;
   height: 80vh;
-  padding: 2rem;
   text-decoration: none;
 }
