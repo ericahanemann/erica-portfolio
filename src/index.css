@@ -3,6 +3,7 @@
 
 :root {
   --primary-color: #f0f0f0;
+  --transparent-primary-color: #ffffff5d;
   --secondary-color: #000;
   --highlights-color: #f6d61c;
   --highlights-color-hover: #fcde38;

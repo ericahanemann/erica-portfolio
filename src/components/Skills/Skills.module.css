@@ -4,5 +4,67 @@
 }
 
 .skillsTitle {
+  width: 100%;
+  text-align: left;
+  font-size: 6rem;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.2rem;
   color: var(--primary-color);
+  padding: 2rem 0 0 2rem;
+}
+
+.skillsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem 8rem;
+}
+
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--transparent-primary-color);
+  overflow: hidden;
+
+  text-decoration: none;
+}
+
+.skillItem:hover {
+  cursor: pointer;
+  color: var(--highlights-color);
+  transition: all 0.2s;
+}
+
+.skillItemIconContainer {
+  position: relative;
+  height: 280px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillItemIcon {
+  width: auto;
+  height: 90%;
+  padding: 0;
+  color: var(--transparent-primary-color);
+
+  transition: all 0.3s;
+}
+
+.skillItem:hover .skillItemIcon {
+  color: var(--highlights-color);
+  transform: scale(1.05);
+}
+
+.skillItemName {
+  height: 15%;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
