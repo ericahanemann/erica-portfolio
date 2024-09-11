@@ -23,27 +23,42 @@
   padding: 2rem 8rem;
 }
 
+.card {
+  transition: all 0.3s;
+}
+
 .skillItem {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--transparent-primary-color);
   overflow: hidden;
-
+  background: rgba(255, 255, 255, 0.178);
+  border-radius: 1rem;
+  filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.171);
   text-decoration: none;
+  padding: 1rem;
+
+  transition: all 0.3s;
 }
 
 .skillItem:hover {
   cursor: pointer;
-  color: var(--highlights-color);
-  transition: all 0.2s;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.116);
+  filter: blur(0);
+  color: var(--primary-color);
 }
 
 .skillItemIconContainer {
   position: relative;
-  height: 280px;
-  width: 280px;
+  height: 260px;
+  width: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,8 +74,7 @@
 }
 
 .skillItem:hover .skillItemIcon {
-  color: var(--highlights-color);
-  transform: scale(1.05);
+  color: var(--primary-color);
 }
 
 .skillItemName {
