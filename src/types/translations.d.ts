@@ -17,11 +17,17 @@ export type TranslationContent = {
     contact: string;
   };
   hero: {
-    title: string
-    content: string
+    title: string;
+    content: string;
   };
   about: {
     title: string;
+    infoP1: string;
+    infoP2: string;
+    infoP3: string;
+    infoPConcat: string;
+    infoP3End: string;
+    infoP4: string;
   };
   projects: {
     title: string;

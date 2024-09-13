@@ -11,10 +11,16 @@ import {
 import { BiLogoRedux, BiLogoTypescript, BiLogoGit } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io";
 
-export default function Skills() {
+import { TranslationContent } from "../../types/translations";
+
+interface SkillsProps {
+  content: TranslationContent;
+}
+
+export default function Skills({ content }: SkillsProps) {
   return (
     <section id="skills" className={styles.skillsSection}>
-      <h3 className={styles.skillsTitle}>SKILLS</h3>
+      <h3 className={styles.skillsTitle}>{content.skills.title}</h3>
       <div className={styles.skillsContainer}>
         <Tilt
           className={styles.card}
@@ -23,8 +29,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >
@@ -47,8 +53,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >
@@ -71,8 +77,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >
@@ -95,8 +101,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >
@@ -121,8 +127,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >
@@ -147,8 +153,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >
@@ -173,8 +179,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >
@@ -197,8 +203,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >
@@ -221,8 +227,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >
@@ -245,8 +251,8 @@ export default function Skills() {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.4}
-          glareColor="#acacac"
+          glareMaxOpacity={0.3}
+          glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
         >

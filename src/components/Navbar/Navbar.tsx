@@ -9,9 +9,6 @@ interface NavbarProps {
   content: TranslationContent;
 }
 
-const url = window.location.pathname;
-console.log(url);
-
 export default function Navbar({ content }: NavbarProps) {
   const { pathname } = useLocation();
 

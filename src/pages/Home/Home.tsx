@@ -14,9 +14,9 @@ export default function Home({ content }: HomeProps) {
   return (
     <main className={styles.main}>
       <Hero content={content}></Hero>
-      <Projects></Projects>
-      <About></About>
-      <Skills></Skills>
+      <Projects content={content}></Projects>
+      <About content={content}></About>
+      <Skills content={content}></Skills>
     </main>
   );
 }

@@ -36,7 +36,7 @@
   text-align: justify;
 }
 
-.aboutInfo p div {
+.aboutInfo p span {
   display: inline;
   padding-left: 0.3rem;
   vertical-align: middle;
