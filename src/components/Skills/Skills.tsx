@@ -29,7 +29,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -37,6 +37,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://nextjs.org/"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
@@ -53,7 +54,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -61,6 +62,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://react.dev/"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
@@ -77,7 +79,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -85,6 +87,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://redux.js.org/"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
@@ -101,7 +104,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -109,6 +112,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://tailwindcss.com/"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
@@ -127,7 +131,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -135,6 +139,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://www.typescriptlang.org/"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
@@ -153,7 +158,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -161,6 +166,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
@@ -179,7 +185,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -187,6 +193,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://nodejs.org/en"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
@@ -203,7 +210,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -211,6 +218,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/HTML"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
@@ -227,7 +235,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -235,6 +243,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/CSS"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
@@ -251,7 +260,7 @@ export default function Skills({ content }: SkillsProps) {
           tiltMaxAngleY={5}
           scale={1.05}
           glareEnable={true}
-          glareMaxOpacity={0.3}
+          glareMaxOpacity={0.2}
           glareColor="#919191"
           glarePosition="all"
           glareBorderRadius="10px"
@@ -259,6 +268,7 @@ export default function Skills({ content }: SkillsProps) {
           <a
             href="https://git-scm.com/"
             target="_blank"
+            rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>

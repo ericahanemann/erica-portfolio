@@ -9,7 +9,7 @@
 .heroContent {
   display: flex;
   align-items: end;
-  margin-top: 4rem;
+  padding-top: 1rem;
 }
 
 .heroInfo {
@@ -151,17 +151,17 @@
 
 .name {
   position: relative;
+  height: 100%;
   width: 65%;
   padding-right: 2.5rem;
   overflow-y: hidden;
   font-family: "Staatliches", sans-serif;
   font-size: 22rem;
   font-weight: 500;
-  line-height: 16rem;
+  line-height: 17rem;
   letter-spacing: -1.2rem;
   text-align: right;
   color: var(--secondary-color);
-  padding-top: 1rem;
   user-select: none; /* block text selection */
 }
 
