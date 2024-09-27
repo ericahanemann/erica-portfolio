@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 
 import translations from "./translations.json";
 import { TranslationContent } from "./types/translations";
+import Contact from "./pages/Contact/Contact";
 
 export const AppRoutes = () => {
   const [lang, setLang] = useState<"pt" | "en">("pt");
@@ -26,7 +27,7 @@ export const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home content={content} />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/contact" element={<Project />} />
+        <Route path="/contact" element={<Contact content={content} />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

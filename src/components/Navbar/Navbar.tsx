@@ -95,11 +95,13 @@ export default function Navbar({ content }: NavbarProps) {
         </ul>
       )}
 
-      <NavLink to="/">
-        <button className={styles.contactButton}>
-          {content.navbar.contact}
-        </button>
-      </NavLink>
+      {(pathname == "/" || pathname == "/project") && (
+        <NavLink to="/contact">
+          <button className={styles.contactButton}>
+            {content.navbar.contact}
+          </button>
+        </NavLink>
+      )}
     </nav>
   );
 }

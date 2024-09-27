@@ -1,0 +1,200 @@
+.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.contact {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+}
+
+.contactTitle {
+  width: 100%;
+  text-align: left;
+  font-size: 6rem;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.2rem;
+  color: var(--primary-color);
+  padding: 2rem 0 0 2rem;
+  overflow-y: hidden;
+}
+
+.contactContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.contactInfo {
+  width: 50%;
+  height: 100%;
+}
+
+.contactInfo p {
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+  letter-spacing: -1px;
+  text-align: justify;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+}
+
+.formContainer {
+  width: 50%;
+  height: 100%;
+}
+
+.formContainer form {
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+  padding: 2rem 8rem;
+}
+
+form .field {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+form .field .label {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 12%;
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: var(--transparent-primary-color);
+}
+
+form .field .label.textareaLabel {
+  top: 2%;
+}
+
+form .field .input {
+  z-index: 2;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--transparent-primary-color);
+  color: var(--primary-color);
+  padding: 1rem 1rem 1rem 25%;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+form .field .input:focus {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+form .field .input:invalid:not(:placeholder-shown) {
+  color: var(--highlights-color);
+  border-bottom: 2px solid var(--highlights-color);
+}
+
+form .field .input:-webkit-autofill,
+form .field .input:-webkit-autofill:hover,
+form .field .input:-webkit-autofill:focus,
+form .field .input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--primary-color);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+form .field .textarea:invalid:not(:placeholder-shown) {
+  color: var(--highlights-color);
+  border-bottom: 2px solid var(--highlights-color);
+}
+
+form .field .textarea {
+  z-index: 2;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-top: 2px solid var(--transparent-primary-color);
+  color: var(--primary-color);
+  padding: 1rem 1rem 1rem 25%;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+form .field .textarea:focus {
+  border-top: 2px solid var(--primary-color);
+}
+
+.control {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.submitButton {
+  width: 80%;
+  position: relative;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--highlights-color);
+  box-shadow: 2px 2px 4px #6969695e;
+  overflow: hidden;
+
+  transition: all 0.8s;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background-color: var(--highlights-color-hover);
+}
+
+.submitButton::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(
+    transparent,
+    rgba(235, 235, 235, 0.568),
+    transparent
+  );
+
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.8s ease-in-out;
+}
+
+.submitButton:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
