@@ -57,7 +57,15 @@
       ]
     },
     "contact": {
-      "title": "contate-me"
+      "title": "contate-me",
+      "formInfo": "caso tenha se interessado pelo meu trabalho e queira conversar sobre uma ideia de projeto ou parceria, preencha o formulário ou então entre em contato diretamente pelo email ",
+      "formEmail": "ericavhanemann@gmail.com",
+      "nameInput": "seu nome",
+      "emailInput": "seu email",
+      "messageArea": "mensagem",
+      "submitBtn": "enviar",
+      "successMessage": "já recebi seu contato! retornarei assim que possível ;)",
+      "errorMessage": "algo deu errado! se necessário, entre em contato diretamente no meu email"
     },
     "footer": {
       "copyrightText": "Érica Vanessa Hanemann. Todos os direitos reservados."
@@ -121,7 +129,15 @@
       ]
     },
     "contact": {
-      "title": "contact me"
+      "title": "contact me",
+      "formInfo": "if you're interested in my work and want to discuss a project idea or partnership, fill out the form or contact me directly via email ",
+      "formEmail": "ericavhanemann@gmail.com",
+      "nameInput": "your name",
+      "emailInput": "your email",
+      "messageArea": "message",
+      "submitBtn": "submit",
+      "successMessage": "i’ve received your message! i’ll get back to you as soon as possible ;)",
+      "errorMessage": "something went wrong! if necessary, contact me directly via email"
     },
     "footer": {
       "copyrightText": "Érica Vanessa Hanemann. All rights reserved."

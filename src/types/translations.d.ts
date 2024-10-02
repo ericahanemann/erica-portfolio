@@ -41,6 +41,14 @@ export type TranslationContent = {
   };
   contact: {
     title: string;
+    formInfo: string;
+    formEmail: string;
+    nameInput: string;
+    emailInput: string;
+    messageArea: string;
+    submitBtn: string;
+    successMessage: string;
+    errorMessage: string;
   };
   footer: {
     copyrightText: string;

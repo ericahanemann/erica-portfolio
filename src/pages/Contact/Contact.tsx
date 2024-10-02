@@ -33,31 +33,28 @@ export default function Contact({ content }: ContactProps) {
           <div className={styles.formContainer}>
             {state.succeeded ? (
               <p className={styles.statusMessage}>
-                já recebi seu contato! retornarei assim que possível ;)
+                {content.contact.successMessage}
               </p>
             ) : (
               ""
             )}
             {state.errors ? (
               <p className={styles.statusMessage}>
-                algo deu errado! se necessário, entre em contato diretamente no
-                meu email
+                {content.contact.errorMessage}
               </p>
             ) : (
               ""
             )}
             <div className={styles.formInfo}>
               <p>
-                Caso tenha se interessado pelo meu trabalho e queira conversar
-                sobre uma ideia de projeto ou parceria, preencha o formulário ou
-                então entre em contato diretamente pelo email{" "}
-                <strong>ericavhanemann@gmail.com</strong>
+                {content.contact.formInfo}
+                <strong>{content.contact.formEmail}</strong>
               </p>
             </div>
             <form method="POST" onSubmit={handleSubmit}>
               <div className={styles.field}>
                 <label className={styles.label} htmlFor="name">
-                  Your Name
+                  {content.contact.nameInput}
                 </label>
                 <input
                   className={styles.input}
@@ -77,7 +74,7 @@ export default function Contact({ content }: ContactProps) {
               </div>
               <div className={styles.field}>
                 <label className={styles.label} htmlFor="email">
-                  Your Email
+                  {content.contact.emailInput}
                 </label>
                 <input
                   className={styles.input}
@@ -101,7 +98,7 @@ export default function Contact({ content }: ContactProps) {
               </div>
               <div className={styles.field}>
                 <label className={`${styles.label} ${styles.textareaLabel}`}>
-                  Message
+                  {content.contact.messageArea}
                 </label>
                 <textarea
                   className={styles.textarea}
@@ -136,7 +133,7 @@ export default function Contact({ content }: ContactProps) {
                       : false
                   }
                 >
-                  Submit
+                  {content.contact.submitBtn}
                 </button>
               </div>
             </form>
