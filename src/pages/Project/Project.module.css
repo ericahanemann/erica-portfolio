@@ -1,0 +1,151 @@
+.main {
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  margin-top: 100px;
+}
+
+.projectImages {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+.projectImages img {
+  width: 100%;
+  height: auto;
+}
+
+.projectInfo {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  width: 50%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  box-shadow: -20px 0 35px rgba(114, 114, 114, 0.178);
+}
+
+.projectTitleContainer {
+  min-height: 50%;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(black, transparent, black);
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.video video {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.projectTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 10rem;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.2rem;
+  line-height: 8rem;
+  color: var(--transparent-primary-color);
+  padding: 2rem 0 0 2rem;
+  overflow-y: hidden;
+  user-select: none; /* block text selection */
+}
+
+.projectDescContainer {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.projectDescContainer p {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -1px;
+  text-align: justify;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+}
+
+.projectLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.projectLinkItem {
+  position: relative;
+  width: 50%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.4rem;
+  border: 2px solid var(--transparent-primary-color);
+  border-radius: 0.3rem;
+  color: var(--transparent-primary-color);
+  background-color: transparent;
+  box-shadow: 2px 2px 4px #6969695e;
+  overflow: hidden;
+
+  transition: all 0.3s;
+}
+
+.projectLinkItem:hover {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.projectLinkItem::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    45deg,
+    transparent,
+    rgba(235, 235, 235, 0.192),
+    transparent
+  );
+
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.projectLinkItem:hover::before {
+  transform: translateX(100%);
+}
