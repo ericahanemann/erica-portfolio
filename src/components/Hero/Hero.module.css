@@ -199,3 +199,157 @@
     transform: translateX(300%);
   }
 }
+
+@media (max-width: 1440px) {
+  .heroInfo {
+    width: 25%;
+  }
+  .heroInfoText {
+    width: 95%;
+  }
+  .name {
+    width: 75%;
+    font-size: 20rem;
+    line-height: 15.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroInfo {
+    padding-left: 1rem;
+  }
+  .heroInfoTitle {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.2rem;
+    color: var(--highlights-color);
+    line-height: 2rem;
+    overflow-y: hidden;
+  }
+  .heroInfoText {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .name {
+    width: 75%;
+    font-size: 14rem;
+    line-height: 11rem;
+    letter-spacing: -1.1rem;
+    padding-right: 1.5rem;
+  }
+  .heroInfoSocials {
+    gap: 0.2rem;
+    margin-top: 0.2rem;
+  }
+  .heroSocialIcon {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+    padding-top: 1rem;
+  }
+  .heroInfo {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .heroInfoTitle {
+    font-size: 3.6rem;
+    line-height: 3.4rem;
+  }
+  .heroInfoText {
+    width: 75%;
+    letter-spacing: -1px;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+  .name {
+    min-height: calc(100vh - 100px);
+    width: 100vw;
+    font-size: 14rem;
+    line-height: 10.5rem;
+    letter-spacing: -1.1rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .heroInfoSocials {
+    width: 75%;
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .heroSocialIcon {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 445px) {
+  .heroInfo {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .heroInfoTitle {
+    font-size: 4rem;
+    line-height: 3.2rem;
+    padding: 0 1rem;
+  }
+  .heroInfoText {
+    width: 100%;
+    letter-spacing: -1px;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+  .name {
+    font-size: 7.5rem;
+    line-height: 6rem;
+    letter-spacing: -0.6rem;
+    padding: 1rem;
+  }
+  .heroInfoSocials {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .heroSocialIcon {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 445px) {
+  .heroInfoTitle {
+    font-size: 3.6rem;
+    line-height: 3.2rem;
+  }
+  .heroInfoText {
+    width: 100%;
+    letter-spacing: -1px;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+  .name {
+    font-size: 6.5rem;
+    line-height: 5rem;
+    letter-spacing: -0.4rem;
+    padding: 1rem;
+  }
+}
