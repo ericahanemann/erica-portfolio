@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import styles from "./Navbar.module.css";
 import Logo from "../Logo/Logo";
 import { TranslationContent } from "../../types/translations";
+import { useState } from "react";
 
 interface NavbarProps {
   content: TranslationContent;
@@ -11,6 +12,17 @@ interface NavbarProps {
 
 export default function Navbar({ content }: NavbarProps) {
   const { pathname } = useLocation();
+  const [isResponsiveMenuOpen, setIsResponsiveMenuOpen] = useState(false);
+
+  const handleCloseResponsiveMenu = () => {
+    setTimeout(() => {
+      setIsResponsiveMenuOpen(false);
+    }, 600);
+  };
+
+  const handleOpenResponsiveMenu = () => {
+    setIsResponsiveMenuOpen(true);
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -95,7 +107,95 @@ export default function Navbar({ content }: NavbarProps) {
         </ul>
       )}
 
-      {(pathname == "/" || pathname == "/project") && (
+      {!isResponsiveMenuOpen && pathname == "/" && (
+        <div
+          className={styles.burgerMenuIcon}
+          onClick={handleOpenResponsiveMenu}
+        >
+          <div className={styles.burguerIconStroke}></div>
+          <div className={styles.burguerIconStroke}></div>
+          <div className={styles.burguerIconStroke}></div>
+        </div>
+      )}
+
+      <ul
+        className={`${styles.mobileNavlinks} ${
+          isResponsiveMenuOpen && pathname == "/" ? styles.open : styles.close
+        }`}
+      >
+        <li className={styles.navlinksItem}>
+          <Link
+            onClick={handleCloseResponsiveMenu}
+            to="hero"
+            className={styles.linkTag}
+            activeClass={styles.activeLinkTag}
+            spy={true}
+            smooth={false}
+            offset={-100}
+          >
+            {content.navbar.home}
+            {pathname == "/" && <span>{content.navbar.home}</span>}
+          </Link>
+        </li>
+        <li className={styles.navlinksItem}>
+          <Link
+            onClick={handleCloseResponsiveMenu}
+            to="projects"
+            className={styles.linkTag}
+            activeClass={styles.activeLinkTag}
+            spy={true}
+            smooth={false}
+            offset={-100}
+          >
+            {content.navbar.projects}
+            {pathname == "/" && <span>{content.navbar.projects}</span>}
+          </Link>
+        </li>
+        <li className={styles.navlinksItem}>
+          <Link
+            onClick={handleCloseResponsiveMenu}
+            to="about"
+            className={styles.linkTag}
+            activeClass={styles.activeLinkTag}
+            spy={true}
+            smooth={false}
+            offset={-100}
+          >
+            {content.navbar.about}
+            {pathname == "/" && <span>{content.navbar.about}</span>}
+          </Link>
+        </li>
+        <li className={styles.navlinksItem}>
+          <Link
+            onClick={handleCloseResponsiveMenu}
+            to="skills"
+            className={styles.linkTag}
+            activeClass={styles.activeLinkTag}
+            spy={true}
+            smooth={false}
+            offset={-100}
+          >
+            {content.navbar.skills}
+            {pathname == "/" && <span>{content.navbar.skills}</span>}
+          </Link>
+        </li>
+        <li className={styles.navlinksItem}>
+          <NavLink
+            onClick={handleCloseResponsiveMenu}
+            className={({ isActive }) =>
+              isActive
+                ? `${styles.linkTag} ${styles.activeLinkTag}`
+                : styles.linkTag
+            }
+            to="/contact"
+          >
+            {content.navbar.contact}
+            <span>{content.navbar.contact}</span>
+          </NavLink>
+        </li>
+      </ul>
+
+      {!isResponsiveMenuOpen && !(pathname == "/contact") && (
         <NavLink to="/contact">
           <button className={styles.contactButton}>
             {content.navbar.contact}

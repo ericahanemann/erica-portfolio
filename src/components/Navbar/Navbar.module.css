@@ -27,7 +27,7 @@
   text-transform: uppercase;
 }
 
-.navlinksItem {
+.navlinks .navlinksItem {
   height: 100%;
   display: flex;
   align-items: center;
@@ -36,17 +36,17 @@
   transition: 0.15s ease-in-out;
 }
 
-.navlinksItem .linkTag {
+.navlinks .navlinksItem .linkTag {
   position: relative;
   text-decoration: none;
   padding: 0.4rem 0.8rem;
 }
 
-.linkTag:hover {
+.navlinks .linkTag:hover {
   cursor: pointer;
 }
 
-.linkTag::before {
+.navlinks .linkTag::before {
   position: absolute;
   content: "";
   width: 12px;
@@ -60,13 +60,13 @@
   transform: translateY(-50%);
 }
 
-.linkTag:hover::before {
+.navlinks .linkTag:hover::before {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   animation: fade-in-out 0.25s;
 }
 
-.linkTag::after {
+.navlinks .linkTag::after {
   position: absolute;
   content: "";
   width: 12px;
@@ -80,13 +80,13 @@
   transform: translateY(-50%);
 }
 
-.linkTag:hover::after {
+.navlinks .linkTag:hover::after {
   right: 50%;
   transform: translateY(-50%) translateX(50%);
   animation: fade-in-out 0.25s;
 }
 
-.linkTag span:nth-child(1) {
+.navlinks .linkTag span:nth-child(1) {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -101,7 +101,7 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-.linkTag span:nth-child(2) {
+.navlinks .linkTag span:nth-child(2) {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -116,32 +116,32 @@
   transform: translateX(50%) translateY(50%);
 }
 
-.linkTag:hover span:nth-child(1) {
+.navlinks .linkTag:hover span:nth-child(1) {
   opacity: 1;
   top: 0;
   left: 0;
   transform: translateX(0) translateY(0);
 }
 
-.linkTag:hover span:nth-child(2) {
+.navlinks .linkTag:hover span:nth-child(2) {
   opacity: 1;
   bottom: 0;
   right: 0;
   transform: translateX(0) translateY(0);
 }
 
-.navlinksItem .activeLinkTag {
+.navlinks .navlinksItem .activeLinkTag {
   position: relative;
   text-decoration: none;
   padding: 0.4rem 0.8rem;
 }
 
-.activeLinkTag::before,
-.activeLinkTag::after {
+.navlinks .activeLinkTag::before,
+.navlinks .activeLinkTag::after {
   display: none;
 }
 
-.activeLinkTag span:nth-child(1) {
+.navlinks .activeLinkTag span:nth-child(1) {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -155,7 +155,7 @@
   transform: translateX(0) translateY(0);
 }
 
-.activeLinkTag span:nth-child(2) {
+.navlinks .activeLinkTag span:nth-child(2) {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -167,6 +167,104 @@
 
   opacity: 1;
   transform: translateX(0) translateY(0);
+}
+
+.burgerMenuIcon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 35px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transform: translateY(-50%);
+}
+
+.burguerIconStroke {
+  width: 100%;
+  height: 4px;
+  background-color: var(--secondary-color);
+}
+
+.mobileNavlinks {
+  position: fixed;
+  width: 100vw;
+  height: 0;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: end;
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+}
+
+.mobileNavlinks.open {
+  height: calc(100vh - 100px);
+  top: 100px;
+  animation: grow-down 0.4s ease-in-out;
+  visibility: 1;
+}
+
+.mobileNavlinks.close {
+  top: -100%;
+  height: 0;
+  animation: shrink-up 0.4s ease-in-out;
+  transition: all 0.5s;
+  visibility: 0;
+}
+
+.mobileNavlinks .navlinksItem {
+  position: relative;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+
+  transition: all 0.5s;
+}
+
+.mobileNavlinks .navlinksItem .linkTag {
+  text-align: left;
+  text-decoration: none;
+  border: none;
+  font-size: 8rem;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  line-height: 6.4rem;
+  letter-spacing: -0.2rem;
+  color: transparent;
+  background-color: transparent;
+  -webkit-text-stroke: 2px var(--secondary-color);
+  -webkit-text-stroke-width: 4px;
+}
+.mobileNavlinks .navlinksItem span {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  text-decoration: none;
+  border: none;
+  font-size: 8rem;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  line-height: 6.4rem;
+  letter-spacing: -0.2rem;
+  color: var(--secondary-color);
+
+  transition: all 0.4s 0.1s ease-out;
+  transform: translateX(-100%);
+}
+
+.mobileNavlinks .navlinksItem .activeLinkTag span {
+  overflow: hidden;
+  transform: translateX(0);
 }
 
 .contactButton {
@@ -221,5 +319,90 @@
 
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes grow-down {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: calc(100vh - 100px);
+  }
+}
+
+@keyframes shrink-up {
+  0% {
+    height: calc(100vh - 100px);
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navlinksItem {
+    font-size: 0.9rem;
+  }
+  .contactButton {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navlinks {
+    display: none;
+  }
+  .contactButton {
+    display: none;
+  }
+  .burgerMenuIcon {
+    display: flex;
+  }
+  .mobileNavlinks {
+    display: flex;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+  .mobileNavlinks {
+    padding: 1rem;
+  }
+  .mobileNavlinks .navlinksItem .linkTag {
+    font-size: 5.5rem;
+    line-height: 4.4rem;
+    letter-spacing: -0.1rem;
+  }
+  .mobileNavlinks .navlinksItem span {
+    font-size: 5.5rem;
+    line-height: 4.4rem;
+    letter-spacing: -0.1rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .mobileNavlinks .navlinksItem .linkTag {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+  .mobileNavlinks .navlinksItem span {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .mobileNavlinks .navlinksItem .linkTag {
+    font-size: 4.6rem;
+    line-height: 3.7rem;
+  }
+  .mobileNavlinks .navlinksItem span {
+    font-size: 4.6rem;
+    line-height: 3.7rem;
   }
 }
