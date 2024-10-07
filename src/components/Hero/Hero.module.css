@@ -174,7 +174,7 @@
   width: 200%;
   height: 100%;
   left: 0;
-  top: 0;
+  bottom: 0;
   background-image: linear-gradient(45deg, transparent, #f0f0f050, transparent);
   transform: translateX(-100%);
   animation: shine 8s infinite;
@@ -286,6 +286,10 @@
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
   }
+  .name::before {
+    height: 80%;
+    bottom: 0;
+  }
   .heroInfoSocials {
     width: 75%;
     display: flex;
@@ -326,6 +330,10 @@
     line-height: 6rem;
     letter-spacing: -0.6rem;
     padding: 1rem;
+  }
+  .name::before {
+    height: 50%;
+    bottom: 0;
   }
   .heroInfoSocials {
     width: 100%;
