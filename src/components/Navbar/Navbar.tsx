@@ -1,10 +1,11 @@
+import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Link } from "react-scroll";
 
 import styles from "./Navbar.module.css";
 import Logo from "../Logo/Logo";
+import { IoCloseSharp } from "react-icons/io5";
 import { TranslationContent } from "../../types/translations";
-import { useState } from "react";
 
 interface NavbarProps {
   content: TranslationContent;
@@ -18,6 +19,12 @@ export default function Navbar({ content }: NavbarProps) {
     setTimeout(() => {
       setIsResponsiveMenuOpen(false);
     }, 600);
+  };
+
+  const handleCloseMenuIconClick = () => {
+    setTimeout(() => {
+      setIsResponsiveMenuOpen(false);
+    }, 150);
   };
 
   const handleOpenResponsiveMenu = () => {
@@ -115,6 +122,15 @@ export default function Navbar({ content }: NavbarProps) {
           <div className={styles.burguerIconStroke}></div>
           <div className={styles.burguerIconStroke}></div>
           <div className={styles.burguerIconStroke}></div>
+        </div>
+      )}
+
+      {isResponsiveMenuOpen && pathname == "/" && (
+        <div
+          className={styles.closeMenuIcon}
+          onClick={handleCloseMenuIconClick}
+        >
+          <IoCloseSharp className={styles.icon}></IoCloseSharp>
         </div>
       )}
 

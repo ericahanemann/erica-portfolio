@@ -200,6 +200,18 @@
   animation: shrink-grow 5s infinite linear 1s;
 }
 
+.closeMenuIcon {
+  position: absolute;
+  top: 50%;
+  right: 0.3rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(-50%);
+  font-size: 3.5rem;
+}
+
 .mobileNavlinks {
   position: fixed;
   width: 100vw;
@@ -252,6 +264,7 @@
   -webkit-text-stroke: 2px var(--secondary-color);
   -webkit-text-stroke-width: 4px;
 }
+
 .mobileNavlinks .navlinksItem span {
   position: absolute;
   content: "";
@@ -389,6 +402,9 @@
     display: none;
   }
   .burgerMenuIcon {
+    display: flex;
+  }
+  .closeMenuIcon {
     display: flex;
   }
   .mobileNavlinks {
