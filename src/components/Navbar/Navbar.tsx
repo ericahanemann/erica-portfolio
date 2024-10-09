@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { Link } from "react-scroll";
+import { Link, scrollSpy } from "react-scroll";
 
 import styles from "./Navbar.module.css";
 import Logo from "../Logo/Logo";
@@ -14,6 +14,10 @@ interface NavbarProps {
 export default function Navbar({ content }: NavbarProps) {
   const { pathname } = useLocation();
   const [isResponsiveMenuOpen, setIsResponsiveMenuOpen] = useState(false);
+
+  useEffect(() => {
+    scrollSpy.update();
+  }, [pathname]);
 
   const handleCloseResponsiveMenu = () => {
     setTimeout(() => {
