@@ -26,3 +26,36 @@
   height: 80vh;
   text-decoration: none;
 }
+
+@media (max-width: 1024px) {
+  .projectsTitle {
+    font-size: 5rem;
+  }
+  .projectItem {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectsTitle {
+    font-size: 6rem;
+  }
+  .projectItem {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 445px) {
+  .projectsContainer {
+    padding: 0;
+  }
+  .projectsTitle {
+    font-size: 4.5rem;
+    padding: 2rem 0 0 1rem;
+  }
+  .projectItem {
+    width: 100%;
+    height: 50vh;
+  }
+}

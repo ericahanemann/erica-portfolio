@@ -313,9 +313,9 @@
     gap: 0.5rem;
   }
   .heroInfoTitle {
-    font-size: 4rem;
+    font-size: 3.8rem;
     line-height: 3.2rem;
-    padding: 0 1rem;
+    padding: 0;
   }
   .heroInfoText {
     width: 100%;
@@ -323,7 +323,7 @@
     text-align: justify;
     font-size: 1.2rem;
     margin-top: 1rem;
-    padding: 0 1rem;
+    padding: 0 1rem 0 0;
   }
   .name {
     font-size: 7.5rem;
@@ -337,7 +337,7 @@
   }
   .heroInfoSocials {
     width: 100%;
-    padding: 0 1rem;
+    padding: 0;
   }
   .heroSocialIcon {
     font-size: 52px;
@@ -355,7 +355,6 @@
     text-align: justify;
     font-size: 1.2rem;
     margin-top: 1rem;
-    padding: 0 1rem;
   }
   .name {
     font-size: 6.5rem;

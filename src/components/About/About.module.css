@@ -42,3 +42,42 @@
   vertical-align: middle;
   font-weight: 900;
 }
+
+@media (max-width: 1024px) {
+  .aboutSection {
+    padding-bottom: 4rem;
+  }
+  .aboutTitle {
+    font-size: 5rem;
+  }
+  .aboutInfo {
+    width: 70%;
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    padding-bottom: 2rem;
+  }
+  .aboutContainer {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .aboutInfo {
+    width: 100%;
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 445px) {
+  .aboutTitle {
+    font-size: 4.5rem;
+    padding: 2rem 0 0 1rem;
+  }
+  .aboutInfo {
+    padding: 1rem;
+  }
+}
