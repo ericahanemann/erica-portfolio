@@ -7,7 +7,7 @@
 
 .contact {
   width: 100%;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-color);
@@ -30,7 +30,7 @@
   height: 100%;
   display: flex;
   justify-content: end;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .contactInfo {
@@ -232,4 +232,63 @@ form .field .textarea:focus {
 
 .submitButton:hover::before {
   transform: translateX(100%) rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+  .contactTitle {
+    font-size: 5rem;
+  }
+  .contactInfo {
+    width: 100%;
+  }
+  .formContainer {
+    width: 100%;
+  }
+  .formInfo {
+    padding: 0 8rem;
+  }
+  .formContainer form {
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .formInfo {
+    padding: 0 2rem;
+  }
+  .formContainer form {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .contactTitle {
+    font-size: 4.5rem;
+    padding: 2rem 0 0 1rem;
+  }
+  .formInfo {
+    padding: 0 1rem;
+  }
+  .formContainer form {
+    padding: 0 1rem;
+  }
+  .formInfo p {
+    margin: 0;
+  }
+  form .field .label {
+    top: 18%;
+    font-size: 1.2rem;
+  }
+  form .field .input {
+    padding: 1rem 1rem 1rem 30%;
+  }
+  form .field .textarea {
+    padding: 1rem 1rem 1rem 30%;
+  }
+  form .field .label.textareaLabel {
+    top: 6%;
+  }
+  .submitButton {
+    margin-top: 3rem;
+  }
 }
