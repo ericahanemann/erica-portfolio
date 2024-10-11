@@ -1,19 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Link, scrollSpy } from "react-scroll";
 
+import { TranslationsContext } from "../../routes";
 import styles from "./Navbar.module.css";
 import Logo from "../Logo/Logo";
 import { IoCloseSharp } from "react-icons/io5";
-import { TranslationContent } from "../../types/translations";
 
-interface NavbarProps {
-  content: TranslationContent;
-}
-
-export default function Navbar({ content }: NavbarProps) {
+export default function Navbar() {
   const { pathname } = useLocation();
   const [isResponsiveMenuOpen, setIsResponsiveMenuOpen] = useState(false);
+
+  const contentContext = useContext(TranslationsContext);
+  if (!contentContext)
+    return <div>Erro: contexto de traduções não disponível</div>;
+  const { translations } = contentContext;
 
   useEffect(() => {
     scrollSpy.update();
@@ -66,7 +67,7 @@ export default function Navbar({ content }: NavbarProps) {
               offset={-100}
             >
               <span></span>
-              {content.navbar.home}
+              {translations.navbar.home}
               <span></span>
             </Link>
           </li>
@@ -81,7 +82,7 @@ export default function Navbar({ content }: NavbarProps) {
               offset={-100}
             >
               <span></span>
-              {content.navbar.projects}
+              {translations.navbar.projects}
               <span></span>
             </Link>
           </li>
@@ -96,7 +97,7 @@ export default function Navbar({ content }: NavbarProps) {
               offset={-100}
             >
               <span></span>
-              {content.navbar.about}
+              {translations.navbar.about}
               <span></span>
             </Link>
           </li>
@@ -111,7 +112,7 @@ export default function Navbar({ content }: NavbarProps) {
               offset={-100}
             >
               <span></span>
-              {content.navbar.skills}
+              {translations.navbar.skills}
               <span></span>
             </Link>
           </li>
@@ -153,8 +154,8 @@ export default function Navbar({ content }: NavbarProps) {
             smooth={false}
             offset={-100}
           >
-            {content.navbar.home}
-            {pathname == "/" && <span>{content.navbar.home}</span>}
+            {translations.navbar.home}
+            {pathname == "/" && <span>{translations.navbar.home}</span>}
           </Link>
         </li>
         <li className={styles.navlinksItem}>
@@ -167,8 +168,8 @@ export default function Navbar({ content }: NavbarProps) {
             smooth={false}
             offset={-100}
           >
-            {content.navbar.projects}
-            {pathname == "/" && <span>{content.navbar.projects}</span>}
+            {translations.navbar.projects}
+            {pathname == "/" && <span>{translations.navbar.projects}</span>}
           </Link>
         </li>
         <li className={styles.navlinksItem}>
@@ -181,8 +182,8 @@ export default function Navbar({ content }: NavbarProps) {
             smooth={false}
             offset={-100}
           >
-            {content.navbar.about}
-            {pathname == "/" && <span>{content.navbar.about}</span>}
+            {translations.navbar.about}
+            {pathname == "/" && <span>{translations.navbar.about}</span>}
           </Link>
         </li>
         <li className={styles.navlinksItem}>
@@ -195,8 +196,8 @@ export default function Navbar({ content }: NavbarProps) {
             smooth={false}
             offset={-100}
           >
-            {content.navbar.skills}
-            {pathname == "/" && <span>{content.navbar.skills}</span>}
+            {translations.navbar.skills}
+            {pathname == "/" && <span>{translations.navbar.skills}</span>}
           </Link>
         </li>
         <li className={styles.navlinksItem}>
@@ -209,8 +210,8 @@ export default function Navbar({ content }: NavbarProps) {
             }
             to="/contact"
           >
-            {content.navbar.contact}
-            <span>{content.navbar.contact}</span>
+            {translations.navbar.contact}
+            <span>{translations.navbar.contact}</span>
           </NavLink>
         </li>
       </ul>
@@ -218,7 +219,7 @@ export default function Navbar({ content }: NavbarProps) {
       {!isResponsiveMenuOpen && !(pathname == "/contact") && (
         <NavLink to="/contact">
           <button className={styles.contactButton}>
-            {content.navbar.contact}
+            {translations.navbar.contact}
           </button>
         </NavLink>
       )}

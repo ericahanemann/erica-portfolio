@@ -1,14 +1,10 @@
 import styles from "./Contact.module.css";
-import { TranslationContent } from "../../types/translations";
-import { ChangeEvent, useEffect } from "react";
+import { ChangeEvent, useEffect, useContext } from "react";
 import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { TranslationsContext } from "../../routes";
 
-interface ContactProps {
-  content: TranslationContent;
-}
-
-export default function Contact({ content }: ContactProps) {
+export default function Contact() {
   const [contact, setContact] = useState({
     name: "",
     email: "",
@@ -16,6 +12,11 @@ export default function Contact({ content }: ContactProps) {
   });
 
   const [state, handleSubmit] = useForm("mzzpnokz");
+
+  const contentContext = useContext(TranslationsContext);
+  if (!contentContext)
+    return <div>Erro: contexto de traduções não disponível</div>;
+  const { translations } = contentContext;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,33 +29,33 @@ export default function Contact({ content }: ContactProps) {
   return (
     <main className={styles.main}>
       <section className={styles.contact}>
-        <h3 className={styles.contactTitle}>{content.contact.title}</h3>
+        <h3 className={styles.contactTitle}>{translations.contact.title}</h3>
         <div className={styles.contactContainer}>
           <div className={styles.formContainer}>
             {state.succeeded ? (
               <p className={styles.statusMessage}>
-                {content.contact.successMessage}
+                {translations.contact.successMessage}
               </p>
             ) : (
               ""
             )}
             {state.errors ? (
               <p className={styles.statusMessage}>
-                {content.contact.errorMessage}
+                {translations.contact.errorMessage}
               </p>
             ) : (
               ""
             )}
             <div className={styles.formInfo}>
               <p>
-                {content.contact.formInfo}
-                <strong>{content.contact.formEmail}</strong>
+                {translations.contact.formInfo}
+                <strong>{translations.contact.formEmail}</strong>
               </p>
             </div>
             <form method="POST" onSubmit={handleSubmit}>
               <div className={styles.field}>
                 <label className={styles.label} htmlFor="name">
-                  {content.contact.nameInput}
+                  {translations.contact.nameInput}
                 </label>
                 <input
                   className={styles.input}
@@ -74,7 +75,7 @@ export default function Contact({ content }: ContactProps) {
               </div>
               <div className={styles.field}>
                 <label className={styles.label} htmlFor="email">
-                  {content.contact.emailInput}
+                  {translations.contact.emailInput}
                 </label>
                 <input
                   className={styles.input}
@@ -98,7 +99,7 @@ export default function Contact({ content }: ContactProps) {
               </div>
               <div className={styles.field}>
                 <label className={`${styles.label} ${styles.textareaLabel}`}>
-                  {content.contact.messageArea}
+                  {translations.contact.messageArea}
                 </label>
                 <textarea
                   className={styles.textarea}
@@ -133,7 +134,7 @@ export default function Contact({ content }: ContactProps) {
                       : false
                   }
                 >
-                  {content.contact.submitBtn}
+                  {translations.contact.submitBtn}
                 </button>
               </div>
             </form>

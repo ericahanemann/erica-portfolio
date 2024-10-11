@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import styles from "./Skills.module.css";
+import { TranslationsContext } from "../../routes";
+
 import Tilt from "react-parallax-tilt";
 import {
   RiNextjsFill,
@@ -11,16 +14,15 @@ import {
 import { BiLogoRedux, BiLogoTypescript, BiLogoGit } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io";
 
-import { TranslationContent } from "../../types/translations";
+export default function Skills() {
+  const contentContext = useContext(TranslationsContext);
+  if (!contentContext)
+    return <div>Erro: contexto de traduções não disponível</div>;
+  const { translations } = contentContext;
 
-interface SkillsProps {
-  content: TranslationContent;
-}
-
-export default function Skills({ content }: SkillsProps) {
   return (
     <section id="skills" className={styles.skillsSection}>
-      <h3 className={styles.skillsTitle}>{content.skills.title}</h3>
+      <h3 className={styles.skillsTitle}>{translations.skills.title}</h3>
       <div className={styles.skillsContainer}>
         <Tilt
           className={styles.card}

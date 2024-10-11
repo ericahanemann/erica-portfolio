@@ -1,17 +1,18 @@
+import { useContext } from "react";
 import styles from "./Footer.module.css";
+import { TranslationsContext } from "../../routes";
 
-import { TranslationContent } from "../../types/translations";
+export default function Footer() {
+  const contentContext = useContext(TranslationsContext);
+  if (!contentContext)
+    return <div>Erro: contexto de traduções não disponível</div>;
+  const { translations } = contentContext;
 
-interface FooterProps {
-  content: TranslationContent;
-}
-
-export default function Footer({ content }: FooterProps) {
   return (
     <footer>
       <div className={styles.footerContainer}>
         <p>
-          &copy; {new Date().getFullYear()} {content.footer.copyrightText}
+          &copy; {new Date().getFullYear()} {translations.footer.copyrightText}
         </p>
       </div>
     </footer>

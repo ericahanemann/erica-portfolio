@@ -1,27 +1,26 @@
+import { useContext } from "react";
 import styles from "./About.module.css";
+import { TranslationsContext } from "../../routes";
 
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { RiNextjsLine, RiJavascriptLine } from "react-icons/ri";
 import { TbBrandTypescript } from "react-icons/tb";
 
-import { TranslationContent } from "../../types/translations";
+export default function About() {
+  const contentContext = useContext(TranslationsContext);
+  if (!contentContext)
+    return <div>Erro: contexto de traduções não disponível</div>;
+  const { translations } = contentContext;
 
-interface AboutProps {
-  content: TranslationContent;
-}
-
-export default function About({ content }: AboutProps) {
   return (
     <section id="about" className={styles.aboutSection}>
-      <h3 className={styles.aboutTitle}>{content.about.title}</h3>
+      <h3 className={styles.aboutTitle}>{translations.about.title}</h3>
       <div className={styles.aboutContainer}>
         <div className={styles.aboutInfo}>
+          <p>{translations.about.infoP1}</p>
+          <p>{translations.about.infoP2}</p>
           <p>
-            {content.about.infoP1}
-          </p>
-          <p>{content.about.infoP2}</p>
-          <p>
-            {content.about.infoP3}
+            {translations.about.infoP3}
             <span>
               <FaReact></FaReact> <strong>react</strong>,
             </span>
@@ -35,13 +34,13 @@ export default function About({ content }: AboutProps) {
               <TbBrandTypescript></TbBrandTypescript>{" "}
               <strong>typescript</strong>,
             </span>{" "}
-            {content.about.infoPConcat}
+            {translations.about.infoPConcat}
             <span>
               <FaNodeJs></FaNodeJs> <strong>node.js</strong>
             </span>
-            {content.about.infoP3End}
+            {translations.about.infoP3End}
           </p>
-          <p>{content.about.infoP4}</p>
+          <p>{translations.about.infoP4}</p>
         </div>
       </div>
     </section>

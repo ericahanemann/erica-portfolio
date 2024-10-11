@@ -1,5 +1,4 @@
 import styles from "./Project.module.css";
-import { TranslationContent } from "../../types/translations";
 import { useEffect } from "react";
 
 import project1BgVideo from "../../assets/video/video-test.mp4";
@@ -14,11 +13,7 @@ import { RiJavascriptLine, RiExternalLinkFill } from "react-icons/ri";
 import { TbBrandTailwind } from "react-icons/tb";
 import { SiAxios } from "react-icons/si";
 
-interface ProjectProps {
-  content: TranslationContent;
-}
-
-export default function Contact({ content }: ProjectProps) {
+export default function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
