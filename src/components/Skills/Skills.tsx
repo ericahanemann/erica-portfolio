@@ -11,7 +11,7 @@ import {
   RiNodejsFill,
   RiHtml5Fill,
 } from "react-icons/ri";
-import { BiLogoRedux, BiLogoTypescript, BiLogoGit } from "react-icons/bi";
+import { BiLogoRedux, BiLogoTypescript, BiLogoFigma } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io";
 
 export default function Skills() {
@@ -37,15 +37,15 @@ export default function Skills() {
           glareBorderRadius="10px"
         >
           <a
-            href="https://nextjs.org/"
+            href="https://react.dev/"
             target="_blank"
             rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
-              <RiNextjsFill className={styles.skillItemIcon}></RiNextjsFill>
+              <RiReactjsFill className={styles.skillItemIcon}></RiReactjsFill>
             </div>
-            <p className={styles.skillItemName}>NEXT.JS</p>
+            <p className={styles.skillItemName}>REACT</p>
           </a>
         </Tilt>
 
@@ -62,15 +62,15 @@ export default function Skills() {
           glareBorderRadius="10px"
         >
           <a
-            href="https://react.dev/"
+            href="https://nextjs.org/"
             target="_blank"
             rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
-              <RiReactjsFill className={styles.skillItemIcon}></RiReactjsFill>
+              <RiNextjsFill className={styles.skillItemIcon}></RiNextjsFill>
             </div>
-            <p className={styles.skillItemName}>REACT</p>
+            <p className={styles.skillItemName}>NEXT.JS</p>
           </a>
         </Tilt>
 
@@ -268,15 +268,15 @@ export default function Skills() {
           glareBorderRadius="10px"
         >
           <a
-            href="https://git-scm.com/"
+            href="https://www.figma.com/"
             target="_blank"
             rel="noreferrer"
             className={styles.skillItem}
           >
             <div className={styles.skillItemIconContainer}>
-              <BiLogoGit className={styles.skillItemIcon}></BiLogoGit>
+              <BiLogoFigma className={styles.skillItemIcon}></BiLogoFigma>
             </div>
-            <p className={styles.skillItemName}>GIT</p>
+            <p className={styles.skillItemName}>FIGMA</p>
           </a>
         </Tilt>
       </div>
