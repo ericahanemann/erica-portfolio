@@ -38,7 +38,7 @@ export const AppRoutes = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Project />} />
+          <Route path="/project/:id" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

@@ -10,26 +10,24 @@ export default function Projects() {
     return <div>Erro: contexto de traduções não disponível</div>;
   const { translations } = contentContext;
 
+  const renderedProjects = translations.projects.projectsInfo.map(
+    (projectInfo, index) => {
+      return (
+        <Link
+          key={index}
+          to={`/project/${index + 1}`}
+          className={styles.projectItem}
+        >
+          <ProjectItem projectInfo={projectInfo} />
+        </Link>
+      );
+    }
+  );
+
   return (
     <section id="projects" className={styles.projectsSection}>
       <h3 className={styles.projectsTitle}>{translations.projects.title}</h3>
-      <div className={styles.projectsContainer}>
-        <Link to="/project" className={styles.projectItem}>
-          <ProjectItem title="PERFECT HARMORNY MUSIC STORE" />
-        </Link>
-
-        <Link to="/project" className={styles.projectItem}>
-          <ProjectItem title="WEBSITE RFCC - CANOINHAS" />
-        </Link>
-
-        <Link to="/project" className={styles.projectItem}>
-          <ProjectItem title="WATCHTHIS" />
-        </Link>
-
-        <Link to="/project" className={styles.projectItem}>
-          <ProjectItem title="TECH TICKETS APP" />
-        </Link>
-      </div>
+      <div className={styles.projectsContainer}>{renderedProjects}</div>
     </section>
   );
 }

@@ -1,11 +1,13 @@
 export type Project = {
+  id: number,
   projectName: string;
-  finished: string;
-  imgUrl: string;
+  videoDemo: string;
+  coverImage: string;
+  pagesImages: string[];
   projectDescription: string;
   technologies: string[];
-  liveDemoUrl: string;
-  codeUrl: string;
+  liveUrl: string | null;
+  repoUrl: string;
 };
 
 export type TranslationContent = {
@@ -20,6 +22,10 @@ export type TranslationContent = {
     title: string;
     content: string;
   };
+  projects: {
+    title: string;
+    projectsInfo: Project[];
+  };
   about: {
     title: string;
     infoP1: string;
@@ -29,15 +35,8 @@ export type TranslationContent = {
     infoP3End: string;
     infoP4: string;
   };
-  projects: {
-    title: string;
-  };
   skills: {
     title: string;
-  };
-  work: {
-    title: string;
-    projects: Project[];
   };
   contact: {
     title: string;

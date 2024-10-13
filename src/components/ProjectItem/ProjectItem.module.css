@@ -15,9 +15,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/project-print.png");
   background-size: cover;
-  background-position: right;
+  background-position: center;
 }
 
 .card:hover {
@@ -69,6 +68,7 @@
   top: 0;
   left: 0;
   object-fit: cover;
+  object-position: center;
   z-index: -1;
   opacity: 0;
 }
@@ -120,6 +120,7 @@
     top: 0;
     left: 0;
     object-fit: cover;
+    object-position: center;
     z-index: -1;
     opacity: 0;
   }

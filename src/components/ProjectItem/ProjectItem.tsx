@@ -1,19 +1,19 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Tilt from "react-parallax-tilt";
-import bgVideo from "../../assets/video/video-test.mp4";
+
 import styles from "./ProjectItem.module.css";
+import { Project } from "../../types/translations";
 
-interface ProjectItemProps {
-  title: string;
-}
-
-const ProjectItem: React.FC<ProjectItemProps> = ({ title }) => {
+function ProjectItem({ projectInfo }: { projectInfo: Project }) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  console.log(projectInfo.videoDemo);
 
   const handleMouseOver = () => {
     if (videoRef.current) {
-      videoRef.current.src = bgVideo;
-      videoRef.current.play();
+      videoRef.current.src = projectInfo.videoDemo;
+      videoRef.current.play().catch((error) => {
+        console.error("Erro ao tentar reproduzir o vídeo:", error);
+      });
     }
   };
 
@@ -37,9 +37,11 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title }) => {
         scale={1.01}
         glareEnable={true}
         glareMaxOpacity={0.2}
-        glareColor="#acacac"
+        glareColor="#acacaca8"
         glarePosition="all"
         glareBorderRadius="10px"
+        
+        style={{ backgroundImage: `url(${projectInfo.coverImage})` }}
       >
         <video
           ref={videoRef}
@@ -47,15 +49,15 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title }) => {
           loop
           muted
           preload="none"
-          poster="img/project-print.png"
+          poster={projectInfo.coverImage}
         >
-          <source src={bgVideo} type="video/mp4" />
+          <source src={`${projectInfo.videoDemo}`} type="video/mp4" />
         </video>
         <div className="glass"></div>
-        <div className={styles.cardTitle}>{title}</div>
+        <div className={styles.cardTitle}>{projectInfo.projectName}</div>
       </Tilt>
     </div>
   );
-};
+}
 
 export default ProjectItem;

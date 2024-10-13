@@ -11,14 +11,14 @@ export default function Navbar() {
   const { pathname } = useLocation();
   const [isResponsiveMenuOpen, setIsResponsiveMenuOpen] = useState(false);
 
+  useEffect(() => {
+    scrollSpy.update();
+  }, [pathname]);
+
   const contentContext = useContext(TranslationsContext);
   if (!contentContext)
     return <div>Erro: contexto de traduções não disponível</div>;
   const { translations } = contentContext;
-
-  useEffect(() => {
-    scrollSpy.update();
-  }, [pathname]);
 
   const handleCloseResponsiveMenu = () => {
     setTimeout(() => {
