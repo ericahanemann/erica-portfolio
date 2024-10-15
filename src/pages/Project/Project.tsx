@@ -3,11 +3,9 @@ import { useEffect } from "react";
 import { useContext } from "react";
 import { TranslationsContext } from "../../routes";
 
-import { Link, useParams } from "react-router-dom";
-import { FaReact, FaGithub } from "react-icons/fa";
-import { RiJavascriptLine, RiExternalLinkFill } from "react-icons/ri";
-import { TbBrandTailwind } from "react-icons/tb";
-import { SiAxios } from "react-icons/si";
+import { useParams } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
+import { RiExternalLinkFill } from "react-icons/ri";
 
 export default function Contact() {
   const { id } = useParams<{ id: string }>();
@@ -72,7 +70,9 @@ export default function Contact() {
           </div>
           <div className={styles.projectLinks}>
             <a
-              className={styles.projectLinkItem}
+              className={` ${styles.projectLinkItem}
+                ${project?.liveUrl ? "" : styles.only}
+              `}
               href={project?.repoUrl || "#"}
               target="_blank"
               rel="noreferrer"
@@ -81,7 +81,9 @@ export default function Contact() {
               github
             </a>
             <a
-              className={styles.projectLinkItem}
+              className={
+                project?.liveUrl ? styles.projectLinkItem : styles.hidden
+              }
               href={project?.liveUrl || "#"}
               target="_blank"
               rel="noreferrer"
