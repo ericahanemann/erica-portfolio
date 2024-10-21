@@ -32,7 +32,7 @@
         {
           "id": 2,
           "projectName": "Perfect Harmony Music Store",
-          "videoDemo": "//assets/video/video-test.mp4",
+          "videoDemo": "/assets/video/video-test.mp4",
           "coverImage": "/img/project-4-home.png",
           "pagesImages": [
             "/img/project-4-1.png",
@@ -53,23 +53,32 @@
         },
         {
           "id": 3,
-          "projectName": "Watchthis",
-          "videoDemo": "//assets/video/video-test.mp4",
-          "coverImage": "/img/project-4-home.png",
+          "projectName": "Perfect Harmony Music Store",
+          "videoDemo": "/assets/video/demo-project-3.mp4",
+          "coverImage": "/img/project-3-home.png",
           "pagesImages": [
-            "/img/project-4-1.png",
-            "/img/project-4-2.png",
-            "/img/project-4-3.png"
+            "/img/project-3-1.png",
+            "/img/project-3-2.png",
+            "/img/project-3-3.png",
+            "/img/project-3-4.png",
+            "/img/project-3-5.png"
           ],
-          "projectDescription": "Watchthis é uma aplicação que se conecta à API do The Movie Database para fornecer recomendações de filmes em alta, os mais bem avaliados e os próximos lançamentos. Você pode explorar informações detalhadas sobre cada filme e até mesmo criar sua própria watchlist.",
-          "technologies": ["react", "javascript", "tailwind css", "axios"],
-          "liveUrl": "https://watch-this-app.vercel.app/",
-          "repoUrl": "https://github.com/ericahanemann/watch-this-app"
+          "projectDescription": "Perfect Harmony é um ecommerce de instrumentos musicais que oferece uma ampla variedade de produtos, desde guitarras e teclados até baterias e equipamentos de gravação. A aplicação possui uma API própria que permite aos usuários consultar facilmente os produtos por categoria, encontrar informações detalhadas sobre cada instrumento, adicionar produtos no carrinho e até mesmo criar uma lista de desejos personalizada.",
+          "technologies": [
+            "javascript",
+            "node js",
+            "mongo db",
+            "react",
+            "tailwind css",
+            "axios"
+          ],
+          "liveUrl": null,
+          "repoUrl": "https://github.com/ericahanemann/perfect-harmony-music-store"
         },
         {
           "id": 4,
           "projectName": "Watchthis",
-          "videoDemo": "//assets/video/video-test.mp4",
+          "videoDemo": "/assets/video/video-test.mp4",
           "coverImage": "/img/project-4-home.png",
           "pagesImages": [
             "/img/project-4-1.png",
@@ -143,7 +152,7 @@
         {
           "id": 2,
           "projectName": "Perfect Harmony Music Store",
-          "videoDemo": "//assets/video/video-test.mp4",
+          "videoDemo": "/assets/video/video-test.mp4",
           "coverImage": "/img/project-4-home.png",
           "pagesImages": [
             "/img/project-4-1.png",
@@ -164,23 +173,32 @@
         },
         {
           "id": 3,
-          "projectName": "Watchthis",
-          "videoDemo": "//assets/video/video-test.mp4",
-          "coverImage": "/img/project-4-home.png",
+          "projectName": "Perfect Harmony Music Store",
+          "videoDemo": "/assets/video/demo-project-3.mp4",
+          "coverImage": "/img/project-3-home.png",
           "pagesImages": [
-            "/img/project-4-1.png",
-            "/img/project-4-2.png",
-            "/img/project-4-3.png"
+            "/img/project-3-1.png",
+            "/img/project-3-2.png",
+            "/img/project-3-3.png",
+            "/img/project-3-4.png",
+            "/img/project-3-5.png"
           ],
-          "projectDescription": "Watchthis é uma aplicação que se conecta à API do The Movie Database para fornecer recomendações de filmes em alta, os mais bem avaliados e os próximos lançamentos. Você pode explorar informações detalhadas sobre cada filme e até mesmo criar sua própria watchlist.",
-          "technologies": ["react", "javascript", "tailwind css", "axios"],
-          "liveUrl": "https://watch-this-app.vercel.app/",
-          "repoUrl": "https://github.com/ericahanemann/watch-this-app"
+          "projectDescription": "Perfect Harmony é um ecommerce de instrumentos musicais que oferece uma ampla variedade de produtos, desde guitarras e teclados até baterias e equipamentos de gravação. A aplicação possui uma API própria que permite aos usuários consultar facilmente os produtos por categoria, encontrar informações detalhadas sobre cada instrumento, adicionar produtos no carrinho e até mesmo criar uma lista de desejos personalizada.",
+          "technologies": [
+            "javascript",
+            "node js",
+            "mongo db",
+            "react",
+            "tailwind css",
+            "axios"
+          ],
+          "liveUrl": null,
+          "repoUrl": "https://github.com/ericahanemann/perfect-harmony-music-store"
         },
         {
           "id": 4,
           "projectName": "Watchthis",
-          "videoDemo": "//assets/video/video-test.mp4",
+          "videoDemo": "/assets/video/video-test.mp4",
           "coverImage": "/img/project-4-home.png",
           "pagesImages": [
             "/img/project-4-1.png",
