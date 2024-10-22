@@ -1,10 +1,11 @@
 export type Project = {
-  id: number,
+  id: number;
   projectName: string;
   videoDemo: string;
   coverImage: string;
   pagesImages: string[];
   projectDescription: string;
+  techDescription: string;
   technologies: string[];
   liveUrl: string | null;
   repoUrl: string;

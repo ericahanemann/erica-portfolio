@@ -24,9 +24,9 @@ export default function About() {
             <span>
               <FaReact></FaReact> <strong>react</strong>,
             </span>
-            <span>
+            {/* <span>
               <RiNextjsLine></RiNextjsLine> <strong>next</strong>,
-            </span>
+            </span> */}
             <span>
               <RiJavascriptLine></RiJavascriptLine> <strong>javascript</strong>,
             </span>

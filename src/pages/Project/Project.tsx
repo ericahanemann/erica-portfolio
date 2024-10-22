@@ -64,7 +64,7 @@ export default function Contact() {
           <div>
             <p className={styles.projectDesc}>{project?.projectDescription}</p>
             <p className={styles.projectDesc}>
-              principais tecnologias utilizadas: &nbsp;
+              {project?.techDescription}&nbsp;
               {renderedTechnologies}
             </p>
           </div>
