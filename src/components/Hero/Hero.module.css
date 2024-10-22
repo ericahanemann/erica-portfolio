@@ -1,9 +1,10 @@
 .hero {
   width: 100%;
-  min-height: calc(100% - 90px);
+  min-height: calc(100vh - 90px);
   display: flex;
   justify-content: space-between;
   background-color: var(--primary-color);
+  padding-bottom: 2rem;
 }
 
 .heroContent {
@@ -250,7 +251,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    min-height: calc(100% - 70px);
+    min-height: calc(100vh - 70px);
   }
   .heroContent {
     display: flex;
@@ -287,7 +288,7 @@
     justify-content: end;
     align-items: end;
     padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 3rem;
   }
   .name::before {
     height: 80%;
@@ -332,7 +333,6 @@
     font-size: 7.5rem;
     line-height: 6rem;
     letter-spacing: -0.6rem;
-    padding: 1rem;
   }
   .name::before {
     height: 50%;
@@ -363,6 +363,5 @@
     font-size: 6.5rem;
     line-height: 5rem;
     letter-spacing: -0.4rem;
-    padding: 1rem;
   }
 }
