@@ -32,8 +32,8 @@ function ProjectItem({ projectInfo }: { projectInfo: Project }) {
       <Tilt
         className={styles.card}
         tiltReverse={true}
-        tiltMaxAngleX={2}
-        tiltMaxAngleY={1}
+        tiltMaxAngleX={0.5}
+        tiltMaxAngleY={0.5}
         scale={1.01}
         glareEnable={true}
         glareMaxOpacity={0.2}
