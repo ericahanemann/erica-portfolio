@@ -1,8 +1,8 @@
 .main {
   width: 100vw;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 90px);
   display: flex;
-  margin-top: 100px;
+  margin-top: 90px;
   background-color: var(--secondary-color);
 }
 
@@ -21,7 +21,7 @@
 .projectInfo {
   position: fixed;
   right: 0;
-  top: 100px;
+  top: 90px;
   width: 50%;
   height: calc(100vh - 150px);
   display: flex;
@@ -211,6 +211,17 @@
     justify-content: center;
     gap: 2rem;
     padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    min-height: calc(100% - 70px);
+    margin-top: 70px;
+  }
+  .projectInfo {
+    top: 70px;
+    height: calc(100% - 150px);
   }
 }
 

@@ -4,7 +4,6 @@
   left: 0;
   z-index: 99;
   width: 100vw;
-  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -226,8 +225,8 @@
 }
 
 .mobileNavlinks.open {
-  height: calc(100vh - 100px);
-  top: 100px;
+  height: calc(100vh - 70px);
+  top: 70px;
   animation: grow-down 0.4s ease-in-out;
   visibility: 1;
 }
@@ -354,13 +353,13 @@
   }
 
   100% {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
   }
 }
 
 @keyframes shrink-up {
   0% {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
   }
 
   100% {
@@ -405,6 +404,9 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    height: auto;
+  }
   .navlinks {
     display: none;
   }
@@ -426,6 +428,12 @@
   .navbar {
     padding: 0 1rem;
   }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
   .mobileNavlinks {
     padding: 1rem;
   }

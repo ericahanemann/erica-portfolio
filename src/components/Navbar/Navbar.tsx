@@ -44,7 +44,7 @@ export default function Navbar() {
           className={styles.logo}
           smooth={true}
           duration={500}
-          offset={-100}
+          offset={-90}
         >
           <Logo></Logo>
         </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-90}
             >
               <span></span>
               {translations.navbar.home}
@@ -79,7 +79,7 @@ export default function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-90}
             >
               <span></span>
               {translations.navbar.projects}
@@ -94,7 +94,7 @@ export default function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-90}
             >
               <span></span>
               {translations.navbar.about}
@@ -109,7 +109,7 @@ export default function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-90}
             >
               <span></span>
               {translations.navbar.skills}
@@ -152,7 +152,7 @@ export default function Navbar() {
             activeClass={styles.activeLinkTag}
             spy={true}
             smooth={false}
-            offset={-100}
+            offset={-90}
           >
             {translations.navbar.home}
             {pathname == "/" && <span>{translations.navbar.home}</span>}
@@ -166,7 +166,7 @@ export default function Navbar() {
             activeClass={styles.activeLinkTag}
             spy={true}
             smooth={false}
-            offset={-100}
+            offset={-90}
           >
             {translations.navbar.projects}
             {pathname == "/" && <span>{translations.navbar.projects}</span>}
@@ -180,7 +180,7 @@ export default function Navbar() {
             activeClass={styles.activeLinkTag}
             spy={true}
             smooth={false}
-            offset={-100}
+            offset={-90}
           >
             {translations.navbar.about}
             {pathname == "/" && <span>{translations.navbar.about}</span>}
@@ -194,7 +194,7 @@ export default function Navbar() {
             activeClass={styles.activeLinkTag}
             spy={true}
             smooth={false}
-            offset={-100}
+            offset={-90}
           >
             {translations.navbar.skills}
             {pathname == "/" && <span>{translations.navbar.skills}</span>}

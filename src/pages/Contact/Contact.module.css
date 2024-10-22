@@ -2,12 +2,12 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .contact {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100% - 90px);
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-color);
@@ -253,6 +253,12 @@ form .field .textarea:focus {
 }
 
 @media (max-width: 768px) {
+  .main {
+    margin-top: 70px;
+  }
+  .contact {
+    min-height: calc(100% - 70px);
+  }
   .formInfo {
     padding: 0 2rem;
   }
