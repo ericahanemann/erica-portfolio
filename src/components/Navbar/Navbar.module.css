@@ -227,7 +227,7 @@
 .mobileNavlinks.open {
   height: calc(100% - 70px);
   top: 70px;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   animation: grow-down 0.4s ease-in-out;
   visibility: 1;
 }
