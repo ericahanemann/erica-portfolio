@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 import { TranslationsContext } from "../../routes";
 
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { RiNextjsLine, RiJavascriptLine } from "react-icons/ri";
+import { RiJavascriptLine } from "react-icons/ri";
 import { TbBrandTypescript } from "react-icons/tb";
 
 export default function About() {
