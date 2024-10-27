@@ -2,6 +2,7 @@ export type Project = {
   id: number;
   projectName: string;
   videoDemo: string;
+  videoCover: string;
   coverImage: string;
   pagesImages: string[];
   projectDescription: string;

@@ -47,13 +47,7 @@ export default function Contact() {
       <section className={styles.projectInfo}>
         <div className={styles.projectTitleContainer}>
           <div className={styles.video}>
-            <video
-              autoPlay
-              loop
-              muted
-              preload="none"
-              poster={project?.coverImage}
-            >
+            <video autoPlay loop muted poster={project?.videoCover}>
               <source src={project?.videoDemo} type="video/mp4" />
             </video>
           </div>
@@ -70,7 +64,9 @@ export default function Contact() {
           </div>
           <div className={styles.projectLinks}>
             <a
-              className={` ${styles.projectLinkItem}
+              className={`${
+                project?.repoUrl ? styles.projectLinkItem : styles.hidden
+              }
                 ${project?.liveUrl ? "" : styles.only}
               `}
               href={project?.repoUrl || "#"}
@@ -81,9 +77,11 @@ export default function Contact() {
               github
             </a>
             <a
-              className={
+              className={`${
                 project?.liveUrl ? styles.projectLinkItem : styles.hidden
               }
+                ${project?.repoUrl ? "" : styles.only}
+              `}
               href={project?.liveUrl || "#"}
               target="_blank"
               rel="noreferrer"

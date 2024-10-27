@@ -16,7 +16,11 @@ export default function Projects() {
         <Link
           key={index}
           to={`/project/${index + 1}`}
-          className={styles.projectItem}
+          className={`${styles.projectItem} ${
+            translations.projects.projectsInfo.length % 2 > 0 && index == 0
+              ? styles.full
+              : ""
+          }`}
         >
           <ProjectItem projectInfo={projectInfo} />
         </Link>
