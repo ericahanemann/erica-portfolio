@@ -27,7 +27,13 @@
           ],
           "projectDescription": "um website desenvolvido em conjunto com uma colega para a Associação Rede Feminina de Combate ao Câncer de Canoinhas, buscando promover conscientização, disseminar informações sobre a luta contra o câncer e facilitar o agendamento de exames. além do website, o sistema possui uma api própria e uma aplicação cms para gerenciamento de cadastros, agendamentos e conteúdo.",
           "techDescription": "principais tecnologias utilizadas:",
-          "technologies": ["javascript", "node js", "react", "axios"],
+          "technologies": [
+            "javascript",
+            "node js",
+            "react",
+            "axios",
+            "css modules"
+          ],
           "liveUrl": "https://www.redefemininacanoinhas.com.br/",
           "repoUrl": null
         },
@@ -131,7 +137,13 @@
           ],
           "projectDescription": "a website developed in collaboration with a colleague for the Rede Feminina de Combate ao Câncer de Canoinhas, aimed at promoting awareness, disseminating information about the fight against cancer, and facilitating exam scheduling. In addition to the website, the system includes its own API and a CMS application for managing appointments, registrations and content.",
           "techDescription": "main tech used:",
-          "technologies": ["javascript", "node js", "react", "axios"],
+          "technologies": [
+            "javascript",
+            "node js",
+            "react",
+            "axios",
+            "css modules"
+          ],
           "liveUrl": "https://www.redefemininacanoinhas.com.br/",
           "repoUrl": null
         },
