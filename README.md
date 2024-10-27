@@ -1,4 +1,4 @@
-# Érica's Portfolio
+# Erica's Portfolio
 
 <p>
   A responsive portfolio website developed for personal use.
