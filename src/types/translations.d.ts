@@ -9,7 +9,7 @@ export type Project = {
   techDescription: string;
   technologies: string[];
   liveUrl: string | null;
-  repoUrl: string;
+  repoUrl: string | null;
 };
 
 export type TranslationContent = {
