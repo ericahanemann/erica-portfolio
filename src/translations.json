@@ -19,7 +19,7 @@
           "projectName": "RFCC website",
           "videoDemo": "/assets/video/demo-project-1.mp4",
           "videoCover": "/img/project-1-home.webp",
-          "coverImage": "/img/rfcc-cover.jpg",
+          "coverImage": "/img/rfcc-cover.webp",
           "pagesImages": [
             "/img/project-1-1.webp",
             "/img/project-1-2.webp",
@@ -42,7 +42,7 @@
           "projectName": "Perfect Harmony Music Store",
           "videoDemo": "/assets/video/demo-project-3.mp4",
           "videoCover": "/img/project-3-home.webp",
-          "coverImage": "/img/perfect-harmony-cover.jpg",
+          "coverImage": "/img/perfect-harmony-cover.webp",
           "pagesImages": [
             "/img/project-3-1.webp",
             "/img/project-3-2.webp",
@@ -68,7 +68,7 @@
           "projectName": "Watchthis",
           "videoDemo": "/assets/video/demo-project-4.mp4",
           "videoCover": "/img/project-4-home.webp",
-          "coverImage": "/img/watchthis-cover.jpg",
+          "coverImage": "/img/watchthis-cover.webp",
           "pagesImages": [
             "/img/project-4-1.webp",
             "/img/project-4-2.webp",
@@ -129,7 +129,7 @@
           "projectName": "RFCC website",
           "videoDemo": "/assets/video/demo-project-1.mp4",
           "videoCover": "/img/project-1-home.webp",
-          "coverImage": "/img/rfcc-cover.jpg",
+          "coverImage": "/img/rfcc-cover.webp",
           "pagesImages": [
             "/img/project-1-1.webp",
             "/img/project-1-2.webp",
@@ -152,7 +152,7 @@
           "projectName": "Perfect Harmony Music Store",
           "videoDemo": "/assets/video/demo-project-3.mp4",
           "videoCover": "/img/project-3-home.webp",
-          "coverImage": "/img/perfect-harmony-cover.jpg",
+          "coverImage": "/img/perfect-harmony-cover.webp",
           "pagesImages": [
             "/img/project-3-1.webp",
             "/img/project-3-2.webp",
@@ -178,7 +178,7 @@
           "projectName": "Watchthis",
           "videoDemo": "/assets/video/demo-project-4.mp4",
           "videoCover": "/img/project-4-home.webp",
-          "coverImage": "/img/watchthis-cover.jpg",
+          "coverImage": "/img/watchthis-cover.webp",
           "pagesImages": [
             "/img/project-4-1.webp",
             "/img/project-4-2.webp",
