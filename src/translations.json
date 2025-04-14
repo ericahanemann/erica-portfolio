@@ -8,7 +8,7 @@
       "contact": "Contato"
     },
     "hero": {
-      "title": "desenvolvedora de software",
+      "title": "desenvolvedora front-end",
       "content": "focada em desenvolvimento web, crio aplicações personalizadas que combinam design e funcionalidade de maneira fluida. mais sobre mim e sobre meu trabalho:"
     },
     "projects": {
@@ -84,8 +84,8 @@
     },
     "about": {
       "title": "sobre mim",
-      "infoP1": "olá! me chamo érica e sou desenvolvedora de software.",
-      "infoP2": "desde o início de 2022, tenho me dedicado ao desenvolvimento de aplicações web e estou no processo de conclusão do curso tecnólogo em análise e desenvolvimento de sistemas.",
+      "infoP1": "olá! me chamo érica e sou desenvolvedora front-end.",
+      "infoP2": "Sou formada em Tecnólogo em Análise e Desenvolvimento de Sistemas e, desde 2022, venho me dedicando ao desenvolvimento de aplicações web.",
       "infoP3": "durante esse período, tive a oportunidade de trabalhar com uma variedade de tecnologias. no entanto, minha experiência mais sólida está em",
       "infoPConcat": "e",
       "infoP3End": ", que são as principais ferramentas que utilizo para construir as aplicações em que trabalho.",
@@ -122,7 +122,7 @@
       "content": "focused on web development, i create custom applications that seamlessly blend design and functionality. more about me and about my work:"
     },
     "projects": {
-      "title": "projetos",
+      "title": "projects",
       "projectsInfo": [
         {
           "id": 1,
@@ -194,8 +194,8 @@
     },
     "about": {
       "title": "about me",
-      "infoP1": "hey there! i'm érica and i'm a software developer.",
-      "infoP2": "since early 2022, i have been dedicating my time to web development and i'm now in the process of completing my graduation in systems analysis and development.",
+      "infoP1": "hey there! i'm érica and i'm a front-end developer.",
+      "infoP2": "I have a degree in Systems Analysis and Development, and since early 2022, I've been focusing on web development.",
       "infoP3": "during this time, i've had the opportunity to work with a lot of different technologies. however, i have a more solid experience with",
       "infoPConcat": "and",
       "infoP3End": ", which are the main tools i use to build the applications i work on.",
